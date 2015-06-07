@@ -17,16 +17,16 @@
                	<div class="panel-body">
 	                <ol>
 	                    <li>
-                            Calon siswa mendaftar di SMKN, memilih Kompetensi Keahlian dengan membawa foto copy ijazah yang dilegalisir 1 lembar atau surat keterangan lulus dari sekolah asal dan pas foto 4x6 2 lembar.
+                            Calon peserta didik mendaftar di SMKN, memilih Paket Keahlian dengan membawa foto copy kartu peserta Ujian Nasional dengan menunjukkan aslinya; dan pas foto 4x6 sebanyak 2 lembar.
                         </li>
                         <li>
-                            Calon siswa mengikuti tes minat bakat dan tes khusus Kompetensi Keahlian dengan biaya mandiri.
+                            Calon peserta didik mengikuti tes minat bakat dan tes khusus Kompetensi Keahlian dengan biaya mandiri.
                         </li>
                         <li>
-                            Calon siswa mengikuti tes kesehatan dan psikotes dengan biaya mandiri.
+                            Calon peserta didik mengikuti tes kesehatan dan psikotes dengan biaya mandiri.
                         </li>
                         <li>
-                            Calon siswa dapat memilih maksimal 2 Kompetensi Keahlian, dalam satu sekolah (SMKN).
+                            Calon peserta didik dapat memilih maksimal 2 Kompetensi Keahlian, dalam satu sekolah (SMKN).
                         </li>
                         <li>
                             Untuk tes minat bakat dan tes khusus Kompetensi Keahlian dalam satu kelompok program/bidang studi keahlian mempunyai bobot yang sama.
@@ -35,10 +35,10 @@
                             Berkas Formulir pemilihan Kompetensi Keahlian harus dikembalikan di SMKN yang dipilih dengan melengkapi:
                             <ul>
                                 <li>
-                                    Foto kopi ijazah dilegalisir 1 lembar.
+                                    Foto kopi ijazah atau surat keterangan lulus dilegalisir 1 lembar.
                                 </li>
                                 <li>
-                                    SKHUN asli bagi siswa lulusan tahun pelajaran 2011-2012 & 2012/2013 atau siswa luar Kabupaten Sidoarjo.
+                                    SKHUN asli bagi peserta didik lulusan tahun pelajaran 2012-2013 & 2013/2014 atau calon peserta didik dari luar Kabupaten Sidoarjo.
                                 </li>
                             </ul>
                         </li>
