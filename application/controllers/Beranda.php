@@ -26,6 +26,8 @@ class Beranda extends CI_Controller {
 	public function index()
 	{
 		$data['title'] = "Halaman Utama";
+		$style1 = base_url()."static/css/main_menu.css";
+		$data['styles'] = array($style1);
 		$this->layout->render('beranda', $data);
 	}
 }

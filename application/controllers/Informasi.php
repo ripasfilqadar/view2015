@@ -29,12 +29,31 @@ class Informasi extends CI_Controller {
 
 	public function jadwal_pelaksanaan() {
 		$data['title'] = "Jadwal Pelaksanaan";
+		$style1 = base_url()."static/css/breadcrumb.css";
+		$style2 = base_url()."static/css/datatable.css";
+		$data['styles'] = array($style1,$style2);
 		$this->layout->render('informasi/jadwal_pelaksanaan', $data);
 	}
 
 	public function status_pendaftaran() {
 		$data['title'] = "Status Pendaftaran";
+		$style1 = base_url()."static/css/breadcrumb.css";
+		$style2 = base_url()."static/css/datatable.css";
+		$style3 = base_url()."static/css/custom_select.css";
+		$data['styles'] = array($style1,$style2,$style3);
+		$scriptSelect = base_url()."static/js/bootstrap-select.js";
+		$scriptSelect2 = base_url()."static/js/status_pendaftaran.js";
+		$data['footer_scripts'] = array($scriptSelect,$scriptSelect2);
 		$this->layout->render('informasi/status_pendaftaran', $data);
+	}
+
+	function cekPendaftar() {
+		$this->load->model('pendaftar');
+		$nomor_ujian = $this->input->post('nomor_ujian');
+		$jenjang = $this->input->post('jenjang');
+		$result = $this->pendaftar->getDetail($nomor_ujian,$jenjang);
+		$result['IMAGE'] = base_url()."static/images/".strtoupper($jenjang).".png";
+		echo json_encode($result);
 	}
 }
 

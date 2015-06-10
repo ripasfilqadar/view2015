@@ -11,7 +11,7 @@
 		<title><?php echo $title; ?> - PPDB Sidoarjo 2015</title>
 
 		<!-- Bootstrap core CSS -->
-		<link href='http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700,300italic,400italic,500italic,700italic' rel='stylesheet' type='text/css'>
+		<link href="<?php echo base_url(); ?>static/css/font.css" rel='stylesheet' type='text/css'>
 		<link href="<?php echo base_url(); ?>static/css/bootstrap.css" rel="stylesheet">
 		<link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>static/css/ppdb.css">
 		<?php
@@ -36,7 +36,7 @@
 		<nav class="navbar navbar-default navbar-fixed-top">
 			<div class="container">
 				<div class="navbar-header">
-					<img style="display: initial; height: 40px; margin-top: 9px;" src="<?php echo base_url(); ?>static/images/logo_sda2.png" class="left">
+					<img src="<?php echo base_url(); ?>static/images/logo_sda2.png" class="top_logo left">
 					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
 						<span class="sr-only">Toggle navigation</span>
 						<span class="icon-bar"></span>
@@ -62,14 +62,14 @@
 								<li><a href="<?php echo base_url(); ?>seleksi/sekolah">PER SEKOLAH</a></li>
 							</ul>
 						</li>
-						<li class="dropdown">
+						<!-- <li class="dropdown">
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">SEKOLAH <span class="caret"></span></a>
 							<ul class="dropdown-menu" role="menu">
 								<li><a href="<?php echo base_url(); ?>sekolah/smp">SMP</a></li>
 								<li><a href="<?php echo base_url(); ?>sekolah/sma">SMA</a></li>
 								<li><a href="<?php echo base_url(); ?>sekolah/smk">SMK</a></li>
 							</ul>
-						</li>
+						</li> -->
 						<li class="dropdown">
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">REKAPITULASI <span class="caret"></span></a>
 							<ul class="dropdown-menu" role="menu">
@@ -82,4 +82,5 @@
 				</div>
 			</div>
 		</nav>
-		<div class="container">
+		<div id="wrapper">
+			<div class="container">

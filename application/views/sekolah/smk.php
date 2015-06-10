@@ -62,13 +62,26 @@
                             Usia maksimal 21 (dua puluh satu) tahun pada awal tahun pelajaran 2014/2015.
                         </li>
                         <li>
-                            Bebas memilih dan menentukan urutan sekolah yang diinginkan dengan ketentuan maksimal pilihan adalah 2 (dua) sekolah dari 6 SMA Negeri.
-                        </li>
-                        <li>
-                            Nilai Ujian Nasional (NUN) yang dipakai adalah Bahasa Indonesia, Matematika, IPA, dan Bahasa Inggris.
-                        </li>
-                        <li>
-                            Rumus Nilai Terpadu (NT) yang dipakai untuk siswa kelas X SMKN adalah: NT = ((UN x 2) + (NTMB x 2) + (NTK))/5
+                            <style type="text/css">
+                                .fraction {
+                                    display: inline-block;
+                                    vertical-align: middle; 
+                                    margin: 0 0.2em 0.4ex;
+                                    text-align: center;
+                                }
+                                .fraction > span {
+                                    display: block;
+                                    padding-top: 0.15em;
+                                }
+                                .fraction span.fdn {border-top: thin solid black;}
+                                .fraction span.bar {display: none;}
+                            </style>
+                            Rumus Nilai Terpadu (NT) yang dipakai untuk siswa kelas X SMKN adalah: NT = 
+                            <div class="fraction">
+                                <span class="fup">(UN x 2) + (NTMB x 2) + (NTK)</span>
+                                <span class="bar">/</span>
+                                <span class="fdn">5</span>
+                            </div>
                             <ul>
                                 <li>
                                     NU = Nilai Ujian Nasional
@@ -87,44 +100,182 @@
             <div class="panel panel-ppdb">
                 <div class="panel-heading"><h4 class="page_subtitle">DAFTAR SMK NEGERI</h4></div>
                	<div class="panel-body">
-                    <table class="table table-bordered table-hover table-striped">
+                    <table class="table table-bordered table-hover">
                         <thead style="background-color: #dde4e6; font-weight: 700; text-align: center;">
                             <tr>
-                                <td style="width: 7%">KODE</td>
-                                <td>NAMA SEKOLAH</td>
+                                <td style="width: 5%">KODE</td>
+                                <td>SATUAN PENDIDIKAN</td>
                                 <td>ALAMAT</td>
                                 <td>TELEPON</td>
+                                <td style="width: 5%">KODE</td>
+                                <td>PAKET KEAHLIAN</td>
                             </tr>
                         </thead>
                         <tr>
-                            <td style="text-align: center">71</td>
-                            <td>SMK Negeri 1 Sidoarjo</td>
-                            <td>Jl. Monginsidi</td>
-                            <td style="text-align: center">031-8965636</td>
+                            <td style="text-align: center" rowspan="8">71</td>
+                            <td rowspan="8">SMK Negeri 1 Sidoarjo</td>
+                            <td rowspan="8">Jl. Monginsidi</td>
+                            <td style="text-align: center; border-right: 1px solid #dddddd;" rowspan="8">031-8965636</td>
                         </tr>
                         <tr>
-                            <td style="text-align: center">72</td>
-                            <td>SMK Negeri 1 Buduran</td>
-                            <td>Jl. Jenggolo 1 B</td>
-                            <td style="text-align: center">031-8941985</td>
+                            <td style="text-align: center">002</td>
+                            <td>Teknik Konstruksi Kayu</td>
                         </tr>
                         <tr>
-                            <td style="text-align: center">73</td>
-                            <td>SMK Negeri 2 Buduran</td>
-                            <td>Jl. Jenggolo 2 A</td>
-                            <td style="text-align: center">031-8964034</td>
+                            <td style="text-align: center">004</td>
+                            <td>Teknik Gambar Bangunan</td>
                         </tr>
                         <tr>
-                            <td style="text-align: center">74</td>
-                            <td>SMK Negeri 3 Buduran</td>
-                            <td>Jl. Jenggolo 1 C</td>
-                            <td style="text-align: center">031-8961218</td>
+                            <td style="text-align: center">010</td>
+                            <td>Teknik Instalasi Pemanfaatan Tenaga Listrik</td>
                         </tr>
                         <tr>
-                            <td style="text-align: center">75</td>
-                            <td>SMK Negeri 1 Jabon</td>
-                            <td>Jl. Dukuhsari 1 Jabon </td>
-                            <td style="text-align: center">031-31261000</td>
+                            <td style="text-align: center">012</td>
+                            <td>Teknik Pendingin dan Tata Udara</td>
+                        </tr>
+                        <tr>
+                            <td style="text-align: center">013</td>
+                            <td>Teknik Pemesinan</td>
+                        </tr>
+                        <tr>
+                            <td style="text-align: center">043</td>
+                            <td>Teknik Kendaraan Ringan</td>
+                        </tr>
+                        <tr>
+                            <td style="text-align: center">055</td>
+                            <td>Teknik Audio Video</td>
+                        </tr>
+                        <tr>
+                            <td style="text-align: center" rowspan="6">72</td>
+                            <td rowspan="6">SMK Negeri 1 Buduran</td>
+                            <td rowspan="6">Jl. Jenggolo 1 B</td>
+                            <td style="text-align: center; border-right: 1px solid #dddddd;" rowspan="6">031-8941985</td>
+                        </tr>
+                        <tr>
+                            <td style="text-align: center">106</td>
+                            <td>Akomodasi Perhotelan</td>
+                        </tr>
+                        <tr>
+                            <td style="text-align: center">107</td>
+                            <td>Jasa Boga</td>
+                        </tr>
+                        <tr>
+                            <td style="text-align: center">109</td>
+                            <td>Tata Kecantikan Rambut</td>
+                        </tr>
+                        <tr>
+                            <td style="text-align: center">110</td>
+                            <td>Tata Kecantikan Kulit</td>
+                        </tr>
+                        <tr>
+                            <td style="text-align: center">111</td>
+                            <td>Tata Busana</td>
+                        </tr>
+                        <tr>
+                            <td style="text-align: center" rowspan="7">73</td>
+                            <td rowspan="7">SMK Negeri 2 Buduran</td>
+                            <td rowspan="7">Jl. Jenggolo 2 A</td>
+                            <td style="text-align: center; border-right: 1px solid #dddddd;" rowspan="7">031-8964034</td>
+                        </tr>
+                        <tr>
+                            <td style="text-align: center">63</td>
+                            <td>Rekayasa Perangkat Lunak</td>
+                        </tr>
+                        <tr>
+                            <td style="text-align: center">65</td>
+                            <td>Multimedia</td>
+                        </tr>
+                        <tr>
+                            <td style="text-align: center">100</td>
+                            <td>Administrasi Perkantoran</td>
+                        </tr>
+                        <tr>
+                            <td style="text-align: center">101</td>
+                            <td>Akuntansi</td>
+                        </tr>
+                        <tr>
+                            <td style="text-align: center">102</td>
+                            <td>Perbankan</td>
+                        </tr>
+                        <tr>
+                            <td style="text-align: center">104</td>
+                            <td>Pemasaran</td>
+                        </tr>
+                        <tr>
+                            <td style="text-align: center" rowspan="11">74</td>
+                            <td rowspan="11">SMK Negeri 3 Buduran</td>
+                            <td rowspan="11">Jl. Jenggolo 1 C</td>
+                            <td style="text-align: center; border-right: 1px solid #dddddd;" rowspan="11">031-8961218</td>
+                        </tr>
+                        <tr>
+                            <td style="text-align: center">012</td>
+                            <td>Teknik Pendingin dan Tata Udara</td>
+                        </tr>
+                        <tr>
+                            <td style="text-align: center">013</td>
+                            <td>Teknik Pemesinan</td>
+                        </tr>
+                        <tr>
+                            <td style="text-align: center">043</td>
+                            <td>Teknik Kendaraan Ringan</td>
+                        </tr>
+                        <tr>
+                            <td style="text-align: center">046</td>
+                            <td>Teknik Konstruksi Kapal Baja</td>
+                        </tr>
+                        <tr>
+                            <td style="text-align: center">050</td>
+                            <td>Teknik Instalasi Pemesinan Kapal</td>
+                        </tr>
+                        <tr>
+                            <td style="text-align: center">051</td>
+                            <td>Teknik Pengelasan Kapal</td>
+                        </tr>
+                        <tr>
+                            <td style="text-align: center">052</td>
+                            <td>Kelistrikan Kapal</td>
+                        </tr>
+                        <tr>
+                            <td style="text-align: center">053</td>
+                            <td>Teknik Gambar Rancang Bangun Kapal</td>
+                        </tr>
+                        <tr>
+                            <td style="text-align: center">054</td>
+                            <td>Interior Kapal</td>
+                        </tr>
+                        <tr>
+                            <td style="text-align: center">064</td>
+                            <td>Teknik Komputer dan Jaringan</td>
+                        </tr>
+                        <tr>
+                            <td style="text-align: center" rowspan="7">75</td>
+                            <td rowspan="7">SMK Negeri 1 Jabon</td>
+                            <td rowspan="7">Jl. Dukuhsari 1 Jabon </td>
+                            <td style="text-align: center; border-right: 1px solid #dddddd;" rowspan="7">031-31261000</td>
+                        </tr>
+                        <tr>
+                            <td style="text-align: center">043</td>
+                            <td>Teknik Kendaraan Ringan</td>
+                        </tr>
+                        <tr>
+                            <td style="text-align: center">056</td>
+                            <td>Teknik Elektronika Industri</td>
+                        </tr>
+                        <tr>
+                            <td style="text-align: center">065</td>
+                            <td>Multimedia</td>
+                        </tr>
+                        <tr>
+                            <td style="text-align: center">111</td>
+                            <td>Tata Busana</td>
+                        </tr>
+                        <tr>
+                            <td style="text-align: center">117</td>
+                            <td>Desain dan Produksi Kriya Tekstil</td>
+                        </tr>
+                        <tr>
+                            <td style="text-align: center">118</td>
+                            <td>Desain dan Produksi Kriya Kulit</td>
                         </tr>
                     </table>
                 </div>

@@ -1,0 +1,198 @@
+.sekolah_filter {
+	margin: 0 auto;
+	display: block;
+}
+.sekolah_filter .btn-group {
+	display: block;
+}
+.select .btn.btn-hg .filter-option {
+	left: 20px;
+	right: 40px;
+	top: 13px;
+}
+.btn-hg {
+	height: 46px;
+	padding: 10px 16px;
+	font-size: 18px;
+	line-height: 1.3333333;
+	border-radius: 6px;
+	font-weight: 200;
+}
+.select .btn.btn-hg .caret {
+	right: 16px;
+	top: 21px;
+	position: absolute;
+}
+.select .btn .dropdown-toggle {
+  border-radius: 6px;
+}
+.select .btn .sekolah_filter .dropdown-menu {
+  min-width: 100%;
+}
+.select .btn .sekolah_filter .dropdown-menu dt {
+  cursor: default;
+  display: block;
+  padding: 3px 20px;
+}
+.select .btn .sekolah_filter .dropdown-menu li:not(.disabled) > a:hover small {
+  color: rgba(255, 255, 255, 0.004);
+}
+.select .btn .sekolah_filter .dropdown-menu li > a {
+  min-height: 20px;
+}
+.select .btn .sekolah_filter .dropdown-menu li > a.opt {
+  padding-left: 35px;
+}
+.select .btn .sekolah_filter .dropdown-menu li small {
+  padding-left: .5em;
+}
+.select .btn .sekolah_filter .dropdown-menu li > dt small {
+  font-weight: normal;
+}
+.select .btn > .disabled,
+.select .btn .sekolah_filter .dropdown-menu li.disabled > a {
+  cursor: default;
+}
+.select .btn .filter-option {
+  text-align: left;
+}
+.sekolah_filter .dropdown-menu {
+  background-color: #f3f4f5;
+  border: none;
+  display: block;
+  margin-top: 55px;
+  opacity: 0;
+  padding: 0;
+  visibility: hidden;
+  width: 100%;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+}
+.sekolah_filter .dropdown-menu.typeahead {
+  display: none;
+  opacity: 1;
+  visibility: visible;
+  width: auto;
+  margin-top: 5px;
+  border: 2px solid #1abc9c;
+  padding: 5px 0;
+  background-color: #ffffff;
+  border-radius: 6px;
+}
+.sekolah_filter .dropdown-menu.typeahead li a {
+  padding: 6px 14px;
+}
+.sekolah_filter .dropdown-menu.typeahead li:first-child a,
+.sekolah_filter .dropdown-menu.typeahead li:last-child a {
+  padding: 6px 14px;
+  border-radius: 0;
+}
+.sekolah_filter .open > .dropdown-menu {
+  margin-top: 55px !important;
+  opacity: 1;
+  visibility: visible;
+}
+.sekolah_filter .dropdown-menu li:first-child dt + a {
+  border-radius: 0;
+}
+.sekolah_filter .dropdown-menu li:first-child > a {
+  border-radius: 6px 6px 0 0;
+  padding-top: 8px;
+}
+.sekolah_filter .dropdown-menu li:last-child > a {
+  border-radius: 0 0 6px 6px;
+  padding-bottom: 10px;
+}
+.sekolah_filter .dropdown-menu li.active > a,
+.sekolah_filter .dropdown-menu li.selected > a,
+.sekolah_filter .dropdown-menu li.active > a.highlighted,
+.sekolah_filter .dropdown-menu li.selected > a.highlighted {
+  background: #1abc9c;
+  color: #ffffff;
+}
+.sekolah_filter .dropdown-menu li.active > a:hover,
+.sekolah_filter .dropdown-menu li.selected > a:hover,
+.sekolah_filter .dropdown-menu li.active > a.highlighted:hover,
+.sekolah_filter .dropdown-menu li.selected > a.highlighted:hover,
+.sekolah_filter .dropdown-menu li.active > a:focus,
+.sekolah_filter .dropdown-menu li.selected > a:focus,
+.sekolah_filter .dropdown-menu li.active > a.highlighted:focus,
+.sekolah_filter .dropdown-menu li.selected > a.highlighted:focus {
+  background: #16a085;
+  color: #ffffff;
+}
+.sekolah_filter .dropdown-menu li > a {
+  color: rgba(52, 73, 94, 0.75);
+  padding: 6px 15px 8px;
+  text-decoration: none;
+  -webkit-transition: background-color 0.25s;
+  transition: background-color 0.25s;
+}
+.sekolah_filter .dropdown-menu li > a:before,
+.sekolah_filter .dropdown-menu li > a:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+.sekolah_filter .dropdown-menu li > a:after {
+  clear: both;
+}
+.sekolah_filter .dropdown-menu li > a:hover,
+.sekolah_filter .dropdown-menu li > a:active,
+.sekolah_filter .dropdown-menu li > a:focus {
+  background: #e1e4e7;
+  color: inherit;
+  outline: none;
+}
+.sekolah_filter .dropdown-menu li > a.highlighted {
+  background: #c9cfd4;
+  color: #ffffff;
+}
+.sekolah_filter .dropdown-menu li > a.highlighted:hover,
+.sekolah_filter .dropdown-menu li > a.highlighted:focus {
+  background: #bac1c8;
+  color: #ffffff;
+}
+.sekolah_filter .dropdown-menu li > a:before {
+  float: right;
+  margin-top: 3px;
+}
+.sekolah_filter .dropdown-menu li dt {
+  font-weight: 300;
+  margin-bottom: 3px;
+  margin-top: 12px;
+  padding: 0 15px;
+}
+@media (max-width: 480px) {
+  .sekolah_filter .dropdown-menu {
+    border-radius: 0 0 6px 6px !important;
+  }
+}
+.btn-primary {
+  color: #ffffff;
+  background-color: #1abc9c;
+  border: none;
+}
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary.active,
+.open .dropdown-toggle.btn-primary {
+  color: #ffffff;
+  background-color: #48c9b0;
+  border-color: #48c9b0;
+}
+.btn-primary:active,
+.btn-primary.active,
+.open .dropdown-toggle.btn-primary {
+  background: #16a085;
+}
+.btn-primary .caret{
+  border-top-color: #ffffff;
+}
+.dropup .btn-primary .caret {
+	border-bottom-color: #ffffff;
+}

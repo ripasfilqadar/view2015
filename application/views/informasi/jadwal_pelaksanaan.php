@@ -5,6 +5,7 @@
 				<div class="col-md-6 right text-right" style="padding-right: 0">
 					<ol class="breadcrumb">
 						<li><a href="<?php echo base_url(); ?>">Beranda</a></li>
+                        <li><a href="#">Informasi</a></li>
 						<li class="active">Jadwal Pelaksanaan</li>
 					</ol>
 				</div>
@@ -23,57 +24,49 @@
                                     <tr>
                                         <td style="width: 5%;">No</td>
                                         <td style="width: 25%;">Jenis Kegiatan</td>
-                                        <td style="width: 23.3%">SMP</td>
-                                        <td style="width: 23.3%">SMA</td>
-                                        <td style="width: 23.3%">SMK</td>
+                                        <td style="width: 23.3%">Waktu</td>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <tr>
-                                        <td style="text-align: center">1</td>
-                                        <td>Pendaftaran</td>
-                                        <td style="padding-left: 0px; pading-right: 0px">
-                                            <ol type="a" style="margin-bottom: 0px;">
-                                                <li style="margin-bottom: 5px;">2-23 Mei 2014 (dr sekolah ke UPTD Cabdin)</li>
-                                                <li>24 & 26 Mei 2014 (UPTD Cabdin ke Dinas Pendidikan)</li>
-                                            </ol>
-                                        </td>
-                                        <td style="padding-left: 0px; pading-right: 0px">
-                                            <ol type="a" style="margin-bottom: 0px;">
-                                                <li style="margin-bottom: 5px;">2-23 Mei 2014 (dr sekolah ke UPTD Cabdin)</li>
-                                                <li>24 & 26 Mei 2014 (UPTD Cabdin ke Dinas Pendidikan)</li>
-                                            </ol>
-                                        </td>
-                                        <td style="padding-left: 0px; pading-right: 0px">
-                                            <ol type="a" style="margin-bottom: 0px;">
-                                                <li style="margin-bottom: 5px;">2-23 Mei 2014 (dr sekolah ke UPTD Cabdin)</li>
-                                                <li>24 & 26 Mei 2014 (UPTD Cabdin ke Dinas Pendidikan)</li>
-                                            </ol>
-                                        </td>
+                                        <td class="text-center">1</td>
+                                        <td>Pengambilan Formulir untuk SMP, SMA, dan SMK Negeri di sekolah masing-masing atau di UPTD Cabang Dinas Pendidikan Kecamatan.</td>
+                                        <td class="text-center">Sebelum 18 Mei 2015</td>
                                     </tr>
                                     <tr>
-                                        <td style="text-align: center">2</td>
-                                        <td>Seleksi dan Pengolahan</td>
-                                        <td style="text-align: center">28 Mei & 30-31 Mei 2014</td>
-                                        <td style="text-align: center">28 Mei & 30-31 Mei 2014</td>
-                                        <td style="text-align: center">28 Mei & 30-31 Mei 2014</td>
+                                        <td class="text-center">2</td>
+                                        <td>Penyerahan berkas pendaftaran dari Sekolah/Madrasah ke UPTD Cabang Dinas Pendidikan Kecamatan</td>
+                                        <td class="text-center">18 - 19 Mei 2015</td>
                                     </tr>
                                     <tr>
-                                        <td style="text-align: center">3</td>
-                                        <td>Pengumuman</td>
-                                        <td style="text-align: center">2 Juni 2014</td>
-                                        <td style="text-align: center">2 Juni 2014</td>
-                                        <td style="text-align: center">2 Juni 2014</td>
-                                        <!-- <td>03, 04 Juli 2013</td>
-                                        <td>03, 04 Juli 2013</td>
-                                        <td>03, 04 Juli 2013</td> -->
+                                        <td class="text-center">3</td>
+                                        <td>Pengiriman berkas calon peserta didik dari UPTD Cabang Dinas Pendidikan Kecamatan ke Dinas Pendidikan Kabupaten Sidoarjo</td>
+                                        <td class="text-center">20 - 21 Mei 2015</td>
                                     </tr>
                                     <tr>
-                                        <td style="text-align: center">4</td>
-                                        <td>Daftar Ulang</td>
-                                        <td style="text-align: center">3-5 Juni 2014</td>
-                                        <td style="text-align: center">3-5 Juni 2014</td>
-                                        <td style="text-align: center">3-5 Juni 2014</td>
+                                        <td class="text-center">4</td>
+                                        <td>Seleksi/Pengolahan</td>
+                                        <td class="text-center">22 - 26 Mei 2015</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center">5</td>
+                                        <td>Pengumuman (I)</td>
+                                        <td class="text-center">27 Mei 2015</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center">6</td>
+                                        <td>Daftar Ulang (I) di sekolah yang diterima</td>
+                                        <td class="text-center">28 - 29 Mei 2015</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center">7</td>
+                                        <td>Pengumuman (II)</td>
+                                        <td class="text-center">30 Mei 2015</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center">8</td>
+                                        <td>Daftar Ulang (II)</td>
+                                        <td class="text-center">1 & 3 Jui 2015</td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -82,151 +75,69 @@
                 </div>
                 <div class="panel panel-ppdb">
                     <div class="panel-heading" role="tab" id="headingTwo">
-                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo"><h4 class="page_subtitle">PPDB REGULER</h4></a>
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo"><h4 class="page_subtitle">PPDB REGULER & PPDB SPP-INKLUSI</h4></a>
                     </div>
-                    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                    <div id="collapseTwo" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingTwo">
                         <div class="panel-body">
-                            <table class="table table-bordered table-hover table-striped">
+                            <table class="table table-bordered table-hover">
                                 <thead style="background-color: #dde4e6; font-weight: 700; text-align: center;">
                                     <tr>
                                         <td style="width: 5%;">No</td>
                                         <td style="width: 25%;">Jenis Kegiatan</td>
-                                        <td style="width: 23.3%">SMP</td>
-                                        <td style="width: 23.3%">SMA</td>
-                                        <td style="width: 23.3%">SMK</td>
+                                        <td style="width: 23.3%">SMP, SMA, SMK, / INKLUSI / SMPLB, SMALB, SMKLB</td>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <tr>
-                                        <td style="text-align: center">1</td>
-                                        <td>Pendaftaran</td>
-                                        <td style="text-align: center">20-25 Juni 2014</td>
-                                        <td style="text-align: center">20-25 Juni 2014</td>
-                                        <td style="text-align: center">20-25 Juni 2014</td>
+                                        <td class="text-center" rowspan="4">1</td>
+                                        <td colspan="2">Pendaftaran</td>
                                     </tr>
                                     <tr>
-                                        <td style="text-align: center">2</td>
-                                        <td>Seleksi & Pengolahan</td>
-                                        <td style="text-align: center">26-28 Juni 2014</td>
-                                        <td style="text-align: center">26-28 Juni 2014</td>
-                                        <td style="text-align: center">26-28 Juni 2014</td>
+                                        <td>a. Reguler</td>
+                                        <td class="text-center">20 & 22 - 24 Juni 2015</td>
                                     </tr>
                                     <tr>
-                                        <td style="text-align: center">3</td>
-                                        <td>Pengumuman</td>
-                                        <td style="text-align: center">30 Juni 2014</td>
-                                        <td style="text-align: center">30 Juni 2014</td>
-                                        <td style="text-align: center">30 Juni 2014</td>
+                                        <td rowspan="2">b. Inklusi</td>
+                                        <td class="text-center">Dari peserta didik ke Satuan Pendidikan 20 & 22 Juni 2015</td>
                                     </tr>
                                     <tr>
-                                        <td style="text-align: center">4</td>
-                                        <td>Daftar Ulang I</td>
-                                        <td style="text-align: center">1-2 Juli 2014</td>
-                                        <td style="text-align: center">1-2 Juli 2014</td>
-                                        <td style="text-align: center">1-2 Juli 2014</td>
+                                        <td class="text-center">Dari SP ke UPTD Cabdindik Kecamatan 23 - 24 Juni 2015</td>
                                     </tr>
                                     <tr>
-                                        <td style="text-align: center">5</td>
-                                        <td>Pengumuman II</td>
-                                        <td style="text-align: center">3 Juli 2014</td>
-                                        <td style="text-align: center">3 Juli 2014</td>
-                                        <td style="text-align: center">3 Juli 2014</td>
+                                        <td class="text-center">2</td>
+                                        <td>Seleksi/Pengolahan</td>
+                                        <td class="text-center">25 - 27 Juni 2015</td>
                                     </tr>
                                     <tr>
-                                        <td style="text-align: center">6</td>
-                                        <td>Daftar Ulang II</td>
-                                        <td style="text-align: center">3-4 Juli 2014</td>
-                                        <td style="text-align: center">3-4 Juli 2014</td>
-                                        <td style="text-align: center">3-4 Juli 2014</td>
+                                        <td class="text-center">3</td>
+                                        <td>Pengumuman (I)</td>
+                                        <td class="text-center">29 Juni 2015</td>
                                     </tr>
                                     <tr>
-                                        <td style="text-align: center">7</td>
+                                        <td class="text-center">4</td>
+                                        <td>Daftar Ulang (I)</td>
+                                        <td class="text-center">30 Juni & 1 Juli 2015</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center">5</td>
+                                        <td>Pengumuman (II)</td>
+                                        <td class="text-center">2 Juli 2015</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center">6</td>
+                                        <td>Daftar Ulang (II)</td>
+                                        <td class="text-center">3 - 4 Juli 2015</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center">7</td>
                                         <td>Permulaan Tahun Pelajaran Baru</td>
-                                        <td style="text-align: center">14 Juli 2014</td>
-                                        <td style="text-align: center">14 Juli 2014</td>
-                                        <td style="text-align: center">14 Juli 2014</td>
+                                        <td class="text-center">27 Juli 2015</td>
                                     </tr>
                                     <tr>
-                                        <td style="text-align: center">8</td>
+                                        <td class="text-center">8</td>
                                         <td>Pelaksanaan MOS</td>
-                                        <td style="text-align: center">14-16 Juli 2014</td>
-                                        <td style="text-align: center">14-16 Juli 2014</td>
-                                        <td style="text-align: center">14-16 Juli 2014</td>
+                                        <td class="text-center">27 - 29 Juli 2015</td>
                                     </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-                </div>
-                <div class="panel panel-ppdb">
-                    <div class="panel-heading" role="tab" id="headingThree">
-                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="true" aria-controls="collapseThree"><h4 class="page_subtitle">PPDB SPP-INKLUSI</h4></a>
-                    </div>
-                    <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
-                        <div class="panel-body">
-                            <table class="table table-bordered table-hover table-striped">
-                                <thead style="background-color: #dde4e6; font-weight: 700; text-align: center;">
-                                    <tr>
-                                        <td style="width: 5%;">No</td>
-                                        <td style="width: 25%;">Jenis Kegiatan</td>
-                                        <td style="width: 23.3%">SMP</td>
-                                        <td style="width: 23.3%">SMA</td>
-                                        <td style="width: 23.3%">SMK</td>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td rowspan="3" style="text-align: center">1</td>
-                                        <td colspan="3">Pendaftaran</td>
-                                    </tr>
-                                    <tr>
-                                        <td style="padding-left: 0">
-                                            <ol type="a">
-                                                <li>Pendaftaran peserta didik ke sekolah</li>
-                                            </ol>
-                                        </td>
-                                        <td style="text-align: center">20 – 23 Juni 2014</td>
-                                        <td style="text-align: center">20 – 23 Juni 2014</td>
-                                        <td style="text-align: center">20 – 23 Juni 2014</td>
-                                    </tr>
-                                    <tr>
-                                        <td style="padding-left: 0">
-                                            <ol type="a" start="b">
-                                                <li>Penyerahan berkas dari sekolah ke Dinas Pendidikan Kabupaten</li>
-                                            </ol>
-                                        </td>
-                                        <td style="text-align: center">24 – 25 Juni 2014</td>
-                                        <td style="text-align: center">24 – 25 Juni 2014</td>
-                                        <td style="text-align: center">24 – 25 Juni 2014</td>
-                                    </tr>
-                                    <tr>
-                                        <td style="text-align: center">2</td>
-                                        <td>Seleksi dan Pengolahan</td>
-                                        <td style="text-align: center">26-28 Juni 2014</td>
-                                        <td style="text-align: center">26-28 Juni 2014</td>
-                                        <td style="text-align: center">26-28 Juni 2014</td>
-                                    </tr>
-                                    <tr>
-                                        <td style="text-align: center">3</td>
-                                        <td>Pengumuman</td>
-                                        <td style="text-align: center">30 Juni 2014</td>
-                                        <td style="text-align: center">30 Juni 2014</td>
-                                        <td style="text-align: center">30 Juni 2014</td>
-                                    </tr>
-                                    <tr>
-                                        <td style="text-align: center">4</td>
-                                        <td>Daftar Ulang</td>
-                                        <td style="text-align: center">1-2 Juli 2014</td>
-                                        <td style="text-align: center">1-2 Juli 2014</td>
-                                        <td style="text-align: center">1-2 Juli 2014</td>
-                                    </tr>
-                                    <!-- <tr>
-                                        <td style="text-align: center">5</td>
-                                        <td>Pengumuman dan Daftar Ulang Tahap 2</td>
-                                        <td style="text-align: center">3-4 Juli 2014</td>
-                                        <td style="text-align: center">3-4 Juli 2014</td>
-                                        <td style="text-align: center">3-4 Juli 2014</td>
-                                    </tr> -->
                                 </tbody>
                             </table>
                         </div>
