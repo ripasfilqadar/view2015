@@ -55,21 +55,21 @@
 								<li><a href="<?php echo base_url(); ?>informasi/status_pendaftaran">STATUS PENDAFTARAN</a></li>
 							</ul>
 						</li>
-						<li class="dropdown">
+					<!--	<li class="dropdown">
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">HASIL SELEKSI <span class="caret"></span></a>
 							<ul class="dropdown-menu" role="menu">
 								<li><a href="<?php echo base_url(); ?>seleksi/siswa">PER SISWA</a></li>
 								<li><a href="<?php echo base_url(); ?>seleksi/sekolah">PER SEKOLAH</a></li>
 							</ul>
-						</li>
-						<!-- <li class="dropdown">
+						</li> -->
+						 <li class="dropdown">
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">SEKOLAH <span class="caret"></span></a>
 							<ul class="dropdown-menu" role="menu">
 								<li><a href="<?php echo base_url(); ?>sekolah/smp">SMP</a></li>
 								<li><a href="<?php echo base_url(); ?>sekolah/sma">SMA</a></li>
 								<li><a href="<?php echo base_url(); ?>sekolah/smk">SMK</a></li>
 							</ul>
-						</li> -->
+						</li>
 						<li class="dropdown">
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">REKAPITULASI <span class="caret"></span></a>
 							<ul class="dropdown-menu" role="menu">
