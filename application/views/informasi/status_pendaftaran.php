@@ -21,7 +21,7 @@
 		                    </div>
 		                    <div class="panel">
 		                       	<div class="panel-body">
-		                       		<div class="row" style="margin-top: 10px; margin-bottom: 20px">
+		                       		<div class="row" style="margin-top: 10px;">
 		                       			<div class="col-md-12">
 			                       			<form id="formCekPendaftar">
 				                       			<div class="col-md-6">
@@ -31,7 +31,6 @@
 				                       				<div class="sekolah_filter">
 										                <select name="jenjang">
 										                    <option value="0">JENJANG</option>
-										                    <option value="sd">SD</option>
 										                    <option value="smp">SMP</option>
 										                    <option value="sma">SMA</option>
 										                    <option value="smk">SMK</option>
@@ -44,7 +43,19 @@
 				                       		</form>
 				                       	</div>
 		                       		</div>
-		                       		<div class="row" style="color: #888888; font-weight: 200; display: none" id="result">
+		                       		<div class="row" id="error" style="display: none;">
+		                       			<div class="col-md-12">
+		                       				<div class="row-fluid">
+		                       					<div class="col-md-12">
+				                       				<div class="alert alert-danger fade in" role="alert" style="font-weight: 100; font-size: 15px;">
+														<button type="button" class="close" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+														<strong>Error!</strong> Data yang anda cari tidak dapat ditemukan.
+													</div>
+												</div>
+											</div>
+		                       			</div>
+		                       		</div>
+		                       		<div class="row" style="color: #888888; font-weight: 200; display: none; margin-top: 20px" id="result">
 			                       		<div class="col-md-12">
 			                        		<div class="col-md-4">
 												<div class="profil_detail">

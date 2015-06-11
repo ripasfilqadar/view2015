@@ -51,8 +51,15 @@ class Informasi extends CI_Controller {
 		$this->load->model('pendaftar');
 		$nomor_ujian = $this->input->post('nomor_ujian');
 		$jenjang = $this->input->post('jenjang');
-		$result = $this->pendaftar->getDetail($nomor_ujian,$jenjang);
-		$result['IMAGE'] = base_url()."static/images/".strtoupper($jenjang).".png";
+		if (empty($jenjang)) {
+			$result = NULL;
+		}
+		else {
+			$result = $this->pendaftar->getDetail($nomor_ujian,$jenjang);
+		};
+		if ($result != NULL) {
+			$result['IMAGE'] = base_url()."static/images/".strtoupper($jenjang).".png";
+		}
 		echo json_encode($result);
 	}
 }

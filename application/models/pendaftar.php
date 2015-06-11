@@ -15,6 +15,11 @@ class Pendaftar extends CI_Model {
 		$this->db->join("pagu_sekolah t3", "t1.PILIH2=t3.ID_SEKOLAH");
 		$this->db->where("t1.NO_UJIAN", $no_ujian);
 		$result = $this->db->get();
-		return $result->row_array();
+		if ($result->num_rows() > 0) {
+			return $result->row_array();
+		}
+		else {
+			return NULL;
+		}
 	}
 }

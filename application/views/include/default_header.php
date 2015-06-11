@@ -76,6 +76,7 @@
 								<li><a href="<?php echo base_url(); ?>rekapitulasi/2011">TAHUN 2011</a></li>
 								<li><a href="<?php echo base_url(); ?>rekapitulasi/2012">TAHUN 2012</a></li>
 								<li><a href="<?php echo base_url(); ?>rekapitulasi/2013">TAHUN 2013</a></li>
+								<li><a href="<?php echo base_url(); ?>rekapitulasi/2014">TAHUN 2014</a></li>
 							</ul>
 						</li>
 					</ul>

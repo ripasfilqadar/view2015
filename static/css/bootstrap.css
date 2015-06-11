@@ -5008,9 +5008,9 @@ a.thumbnail.active {
   color: #66512c;
 }
 .alert-danger {
-  background-color: #f2dede;
-  border-color: #ebccd1;
-  color: #a94442;
+  background-color: #F13B2E;
+  border-color: #F13B2E;
+  color: #ffffff;
 }
 .alert-danger hr {
   border-top-color: #e4b9c0;
@@ -5541,6 +5541,11 @@ a.list-group-item-danger.active:focus {
 .panel-group .panel {
   margin-bottom: 0;
   border-radius: 4px;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 .panel-group .panel + .panel {
   margin-top: 5px;
