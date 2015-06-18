@@ -1,7 +1,7 @@
 			<div class="jumbotron">
 				<div class="row">
 					<div class="col-md-3 text-center" style="padding-top: 16px">
-						<img src="<?php echo base_url(); ?>static/images/logo.png" style="height: 180px;">
+						<img src="<?php echo base_url(); ?>static/images/logo.png" style="height:180px;">
 					</div>
 					<div class="col-md-9">
 						<h1>PPDB SIDOARJO 2015</h1>
@@ -13,7 +13,7 @@
 		<div class="row-fluid main_menu_container">
 			<div class="container">
 				<div class="col-md-3">
-					<a class="main_menu_link sd" href="http://180.250.248.75">
+					<a class="main_menu_link sd" href="http://sd.ppdbsidoarjo.net">
 						<div class="main_menu">
 							<img src="<?php echo base_url(); ?>static/images/SD.png" alt="Informasi Sekolah Menengah Pertama PPDB Sidoarjo" title="Informasi Sekolah Menengah Pertama PPDB Sidoarjo" />
 							<p>Semua informasi seputar pendaftaran jenjang Sekolah Dasar.</p>

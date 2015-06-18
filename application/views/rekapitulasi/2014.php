@@ -37,28 +37,14 @@
                                       <td class="col3">28.00</td>
                                       <td class="col4">29.30</td>
                                     </tr>
-                                    <tr>
-                                      <td class="col0">03</td>
-                                      <td class="col1">SMP Negeri 3 Sidoarjo</td>
-                                      <td class="col2">324</td>
-                                      <td class="col3">28.20</td>
-                                      <td class="col4">29.50</td>
-                                    </tr>
-                                    <tr>
+                                   <tr>
                                       <td class="col0">04</td>
                                       <td class="col1">SMP Negeri 4 Sidoarjo</td>
                                       <td class="col2">288</td>
                                       <td class="col3">27.70</td>
                                       <td class="col4">29.30</td>
-                                    </tr>
-                                    <tr>
-                                      <td class="col0">05</td>
-                                      <td class="col1">SMP Negeri 5 Sidoarjo</td>
-                                      <td class="col2">252</td>
-                                      <td class="col3">27.80</td>
-                                      <td class="col4">29.20</td>
-                                    </tr>
-                                    <tr>
+                                   </tr>
+                                   <tr>
                                       <td class="col0">06</td>
                                       <td class="col1">SMP Negeri 6 Sidoarjo</td>
                                       <td class="col2">252</td>
