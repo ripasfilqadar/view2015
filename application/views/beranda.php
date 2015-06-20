@@ -13,7 +13,7 @@
 		<div class="row-fluid main_menu_container">
 			<div class="container">
 				<div class="col-md-3">
-					<a class="main_menu_link sd" href="http://180.250.248.75">
+					<a class="main_menu_link sd" href="http://sd.ppdbsidoarjo.net">
 						<div class="main_menu">
 							<img src="<?php echo base_url(); ?>static/images/SD_P.png" alt="Pendaftaran Sekolah Dasar PPDB Sidoarjo" title="Pendaftaran Sekolah Dasar PPDB Sidoarjo" />
 							<p>Semua informasi seputar pendaftaran jenjang Sekolah Dasar.</p>
