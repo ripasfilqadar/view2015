@@ -55,7 +55,7 @@
 								<li><a href="<?php echo base_url(); ?>informasi/status_pendaftaran">STATUS PENDAFTARAN</a></li>
 							</ul>
 						</li>
-						<li class="active"><a href="<?php echo base_url(); ?>penerimaan">HASIL SELEKSI</a></li>
+						<li class=""><a href="<?php echo base_url(); ?>penerimaan">HASIL SELEKSI</a></li>
 					<!--	<li class="dropdown">
 						<a href="<?php echo base_url();?>penerimaan" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">HASIL SELEKSI <span class="caret"></span></a>
 							<ul class="dropdown-menu" role="menu">
