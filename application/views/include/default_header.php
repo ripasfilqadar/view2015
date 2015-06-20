@@ -55,13 +55,14 @@
 								<li><a href="<?php echo base_url(); ?>informasi/status_pendaftaran">STATUS PENDAFTARAN</a></li>
 							</ul>
 						</li>
+						<li class="active"><a href="<?php echo base_url(); ?>penerimaan">HASIL SELEKSI</a></li>
 					<!--	<li class="dropdown">
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">HASIL SELEKSI <span class="caret"></span></a>
+						<a href="<?php echo base_url();?>penerimaan" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">HASIL SELEKSI <span class="caret"></span></a>
 							<ul class="dropdown-menu" role="menu">
 								<li><a href="<?php echo base_url(); ?>seleksi/siswa">PER SISWA</a></li>
 								<li><a href="<?php echo base_url(); ?>seleksi/sekolah">PER SEKOLAH</a></li>
 							</ul>
-						</li> -->
+						</li>-->
 						 <li class="dropdown">
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">SEKOLAH <span class="caret"></span></a>
 							<ul class="dropdown-menu" role="menu">
