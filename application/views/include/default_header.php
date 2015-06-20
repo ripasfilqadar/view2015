@@ -47,23 +47,16 @@
 				</div>
 				<div id="navbar" class="navbar-collapse collapse">
 					<ul class="nav navbar-nav navbar-right">
-						<li class="active"><a href="<?php echo base_url(); ?>">HOME</a></li>
-						<li class="dropdown">
+						<li <?php if ($this->uri->segment(1) == "") { ?>class="active"<?php } ?>><a href="<?php echo base_url(); ?>">HOME</a></li>
+						<li class="dropdown <?php if ($this->uri->segment(1) == "informasi") { ?>active<?php } ?>">
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">INFO PENDAFTAR <span class="caret"></span></a>
 							<ul class="dropdown-menu" role="menu">
 								<li><a href="<?php echo base_url(); ?>informasi/jadwal_pelaksanaan">JADWAL PELAKSANAAN</a></li>
 								<li><a href="<?php echo base_url(); ?>informasi/status_pendaftaran">STATUS PENDAFTARAN</a></li>
 							</ul>
 						</li>
-						<li class=""><a href="<?php echo base_url(); ?>penerimaan">HASIL SELEKSI</a></li>
-					<!--	<li class="dropdown">
-						<a href="<?php echo base_url();?>penerimaan" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">HASIL SELEKSI <span class="caret"></span></a>
-							<ul class="dropdown-menu" role="menu">
-								<li><a href="<?php echo base_url(); ?>seleksi/siswa">PER SISWA</a></li>
-								<li><a href="<?php echo base_url(); ?>seleksi/sekolah">PER SEKOLAH</a></li>
-							</ul>
-						</li>-->
-						 <li class="dropdown">
+						<li <?php if ($this->uri->segment(1) == "penerimaan") { ?>class="active"<?php } ?>><a href="<?php echo base_url(); ?>penerimaan">HASIL SELEKSI</a></li>
+						 <li class="dropdown <?php if ($this->uri->segment(1) == "sekolah") { ?>active<?php } ?>">
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">SEKOLAH <span class="caret"></span></a>
 							<ul class="dropdown-menu" role="menu">
 								<li><a href="<?php echo base_url(); ?>sekolah/smp">SMP</a></li>
@@ -71,7 +64,7 @@
 								<li><a href="<?php echo base_url(); ?>sekolah/smk">SMK</a></li>
 							</ul>
 						</li>
-						<li class="dropdown">
+						<li class="dropdown <?php if ($this->uri->segment(1) == "rekapitulasi") { ?>active<?php } ?>">
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">REKAPITULASI <span class="caret"></span></a>
 							<ul class="dropdown-menu" role="menu">
 								<li><a href="<?php echo base_url(); ?>rekapitulasi/2011">TAHUN 2011</a></li>

@@ -169,3 +169,31 @@ table.rankSekolah > tbody > tr > td:first-child, table.rankSekolah > tbody > tr 
 	font-weight: 300;
 	text-transform: uppercase;
 }
+.noteSementara {
+	color: #F13B2E;
+	font-size: 10px;
+	font-weight: 900;
+	margin-bottom: 0;
+}
+.blink {
+	-webkit-animation: blink 3s ease infinite;
+	-moz-animation: blink 3s ease infinite
+	-o-animation: blink 3s ease infinite;
+	animation: blink 3s ease infinite
+}
+ 
+@-webkit-keyframes blink {
+	67% { opacity: 0 }
+}
+ 
+@-moz-keyframes blink {
+	67% { opacity: 0 }
+}
+ 
+@-o-keyframes blink {
+	67% { opacity: 0 }
+}
+ 
+@keyframes blink {
+	67% { opacity: 0 }
+}
