@@ -131,6 +131,9 @@ footer a:hover{
 #formCekPendaftar input, #formCekPendaftar select, #formCekPendaftar button {
 	margin-bottom: 20px;
 }
+#formRankSekolah input, #formRankSekolah select, #formRankSekolah button {
+	margin-bottom: 10px;
+}
 .profil_detail {
 	font-weight: 200;
 	text-align: center;
@@ -155,4 +158,14 @@ footer a:hover{
 	font-size: 20px;
 	color: #707070;
 	line-height: 25px;
+}
+table.rankSekolah > tbody > tr > td:first-child, table.rankSekolah > tbody > tr > td:last-child{
+	text-align: center;
+}
+.penerimaan {
+	margin: 0;
+	text-align: center;
+	color: #1FBBA6;
+	font-weight: 300;
+	text-transform: uppercase;
 }

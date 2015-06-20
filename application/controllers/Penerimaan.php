@@ -1,6 +1,6 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
-class Informasi extends CI_Controller {
+class Penerimaan extends CI_Controller {
 
 	/**
 	 * Index Page for this controller.
@@ -24,38 +24,53 @@ class Informasi extends CI_Controller {
 	}
 
 	public function index() {
-		redirect('beranda');
-	}
-
-	public function jadwal_pelaksanaan() {
-		$data['title'] = "Jadwal Pelaksanaan";
-		$style1 = base_url()."static/css/breadcrumb.css";
-		$style2 = base_url()."static/css/datatable.css";
-		$data['styles'] = array($style1,$style2);
-		$this->layout->render('informasi/jadwal_pelaksanaan', $data);
-	}
-
-	public function status_pendaftaran() {
-		$data['title'] = "Status Pendaftaran";
+		$data['title'] = "Hasil Seleksi";
 		$style1 = base_url()."static/css/breadcrumb.css";
 		$style2 = base_url()."static/css/datatable.css";
 		$style3 = base_url()."static/css/custom_select.css";
 		$data['styles'] = array($style1,$style2,$style3);
 		$scriptSelect = base_url()."static/js/bootstrap-select.js";
-		$scriptSelect2 = base_url()."static/js/status_pendaftaran.js";
-		$data['footer_scripts'] = array($scriptSelect,$scriptSelect2);
-		$this->layout->render('informasi/status_pendaftaran', $data);
+		$scriptSelect2 = base_url()."static/js/hasil_seleksi.js";
+		$scriptDatatable = base_url()."static/js/jquery.dataTables.min.js";
+		$scriptDatatable2 = base_url()."static/js/dataTables.bootstrap.js";
+		$data['footer_scripts'] = array($scriptDatatable,$scriptDatatable2,$scriptSelect,$scriptSelect2);
+		$this->layout->render('seleksi', $data);
 	}
 
-	function cekPendaftar() {
-		$this->load->model('pendaftar');
-		$nomor_ujian = $this->input->post('nomor_ujian');
-		$jenjang = $this->input->post('jenjang');
+	function getSekolah() {
+		$this->load->model('sekolah');
+		$jenjang = strtoupper($this->input->post('jenjang'));
 		if (empty($jenjang)) {
 			$result = NULL;
 		}
 		else {
-			$result = $this->pendaftar->getDetail($nomor_ujian,$jenjang);
+			$result = $this->sekolah->getSekolah($jenjang);
+		};
+		echo json_encode($result);
+	}
+
+	function getRankSekolah() {
+		$this->load->model('ranking');
+		$jenjang = $this->input->post('jenjang');
+		$sekolah = $this->input->post('sekolah');
+		if (empty($sekolah)) {
+			$result = NULL;
+		}
+		else {
+			$result = $this->ranking->getRankSekolah($jenjang,$sekolah);
+		};
+		echo json_encode($result);
+	}
+
+	function getRankSiswa() {
+		$this->load->model('ranking');
+		$nomor_ujian = $this->input->post('nomor_ujian');
+		$jenjang = strtolower($this->input->post('jenjang'));
+		if (empty($jenjang)) {
+			$result = NULL;
+		}
+		else {
+			$result = $this->ranking->getRankSiswa($nomor_ujian,$jenjang);
 		};
 		if ($result != NULL) {
 			$result['IMAGE'] = base_url()."static/images/".strtoupper($jenjang)."_".strtoupper(substr($result['JENIS_KEL'],0,1)).".png";
@@ -63,6 +78,3 @@ class Informasi extends CI_Controller {
 		echo json_encode($result);
 	}
 }
-
-/* End of file welcome.php */
-/* Location: ./application/controllers/welcome.php */

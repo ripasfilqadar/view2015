@@ -59,7 +59,7 @@
 			                       		<div class="col-md-12">
 			                        		<div class="col-md-4">
 												<div class="profil_detail">
-													<img id="IMAGE" src="http://localhost/ppdb/static/images/SD.png" alt="Informasi Sekolah Menengah Pertama PPDB Sidoarjo" title="Informasi Sekolah Menengah Pertama PPDB Sidoarjo" />
+													<img id="IMAGE" src="http://localhost/ppdb/static/images/SD_L.png"/>
 													<h4 id="NO_UJIAN"></h4>
 													<h3 id="NAMA"></h3>
 												</div>

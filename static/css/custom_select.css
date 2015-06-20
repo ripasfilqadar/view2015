@@ -69,6 +69,8 @@
   box-shadow: none;
   -webkit-transition: 0.25s;
   transition: 0.25s;
+  max-height: 240px;
+  overflow-x: hidden;
 }
 .sekolah_filter .dropdown-menu.typeahead {
   display: none;
@@ -161,10 +163,14 @@
   margin-top: 3px;
 }
 .sekolah_filter .dropdown-menu li dt {
-  font-weight: 300;
+  font-weight: 400;
   margin-bottom: 3px;
-  margin-top: 12px;
   padding: 0 15px;
+  border-bottom: 1px solid #bfbfbf;
+  padding-bottom: 10px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #1ABC9C;
 }
 @media (max-width: 480px) {
   .sekolah_filter .dropdown-menu {
