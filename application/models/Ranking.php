@@ -139,4 +139,21 @@ class Ranking extends CI_Model {
 			return NULL;
 		}
 	}
+
+	public function cetakData($jenjang,$ID_SEKOLAH){
+		$tabel = "terima_".$jenjang."_2 ta";
+		$join = "pendaftar_".$jenjang." j";
+		$this->db->select("ta.NO_URUT, ta.NO_UJIAN, ta.NAMA, ta.ASAL_SEKOLAH, ta.PILIHAN, ta.NILAI_AKHIR, j.JENIS_KEL");
+		$this->db->from($tabel);
+		$this->db->join($join, 'ta.NO_UJIAN = j.NO_UJIAN');
+		$this->db->where("DITERIMA",$ID_SEKOLAH);
+		$this->db->order_by("NO_URUT", "ASC");
+		$result = $this->db->get();
+		if ($result->num_rows() > 0) {
+			return $result->result_array();
+		}
+		else {
+			return null;
+		}
+	}
 }

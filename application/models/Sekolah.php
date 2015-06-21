@@ -21,4 +21,18 @@ class Sekolah extends CI_Model {
 			return NULL;
 		}
 	}
+
+	function getSekolahById($id_sekolah) {
+		$table = "pagu_sekolah";
+		$this->db->select("ID_SEKOLAH, NAMA_SEKOLAH, JURUSAN");
+		$this->db->from($table);
+		$this->db->where("ID_SEKOLAH",$id_sekolah);
+		$result = $this->db->get();
+		if ($result->num_rows() > 0) {
+			return $result->row_array();
+		}
+		else {
+			return NULL;
+		}
+	}
 }

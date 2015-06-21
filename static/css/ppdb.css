@@ -133,6 +133,7 @@ footer a:hover{
 }
 #formRankSekolah input, #formRankSekolah select, #formRankSekolah button {
 	margin-bottom: 10px;
+	font-weight: 100;
 }
 .profil_detail {
 	font-weight: 200;

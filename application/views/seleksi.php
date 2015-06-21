@@ -101,7 +101,7 @@
 		                       		<div class="row" style="margin-top: 10px;">
 		                       			<div class="col-md-12">
 			                       			<form id="formRankSekolah">
-				                       			<div class="col-md-4">
+				                       			<div class="col-md-3">
 				                       				<div class="sekolah_filter">
 										                <select name="jenjang" id="jenjangSelect">
 										                    <option value="0">JENJANG</option>
@@ -111,7 +111,7 @@
 										                </select>
 										            </div>
 				                       			</div>
-				                       			<div class="col-md-5">
+				                       			<div class="col-md-6">
 				                       				<div class="sekolah_filter">
 										                <select name="sekolah" id="sekolahSelect">
 										                    <option value="0">SEKOLAH</option>
@@ -119,25 +119,35 @@
 										            </div>
 				                       			</div>
 				                       			<div class="col-md-3">
-				                       				<button type="submit" class="btn btn-lg btn-primary btn-block" id="btnSekolah" data-loading-text="Mencari">Tampilkan</button>
+				                       				<?php echo $rankSekolahButton; ?>
 				                       			</div>
 				                       		</form>
 				                       	</div>
 		                       		</div>
 		                       		<div class="row" style="color: #888888; font-weight: 200; margin-top: 10px; display: none" id="resultSekolah">
-			                       		<div class="col-md-12">
-		                        			<table class="table table-bordered table-hover table-striped rankSekolah" id="ranking_sekolah">
-					                            <thead style="background-color: #dde4e6; font-weight: 700; text-align: center;">
-					                            	<tr>
-					                            		<td class="col-md-2">No. URUT</td>
-					                            		<td class="col-md-4">NAMA LENGKAP</td>
-					                            		<td class="col-md-4">ASAL SEKOLAH</td>
-					                            		<td class="col-md-2">NILAI AKHIR</td>
-					                            	</tr>
-					                            </thead>
-					                        </table>
+			                       		<div class="row-fluid">
+			                       			<div class="col-md-12">
+					                       		<div class="col-md-12">
+				                        			<table class="table table-bordered table-hover table-striped rankSekolah" id="ranking_sekolah">
+							                            <thead style="background-color: #dde4e6; font-weight: 700; text-align: center;">
+							                            	<tr>
+							                            		<td class="col-md-2">No. URUT</td>
+							                            		<td class="col-md-4">NAMA LENGKAP</td>
+							                            		<td class="col-md-4">ASAL SEKOLAH</td>
+							                            		<td class="col-md-2">NILAI AKHIR</td>
+							                            	</tr>
+							                            </thead>
+							                        </table>
+					                        	</div>
+				                        	</div>
 			                        	</div>
-		                        		<p class="text-center noteSementara blink">Perhatian! Hasil Perankingan Sementara!</p>
+			                        	<div class="row-fluid">
+			                       			<div class="col-md-12">
+					                       		<div class="col-md-12">
+				                        			<p class="text-center noteSementara blink">Perhatian! Hasil Perankingan Sementara!</p>
+				                        		</div>
+				                        	</div>
+				                        </div>
 		                        	</div>
 		                       	</div>
 		                    </div>
@@ -145,3 +155,12 @@
 		            </div>
             	</div>
             </div>
+            <div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="loginModal" id="loginModal">
+				<div class="modal-dialog modal-sm" style="  top: 50%; position: fixed; margin: -102.5px -150px; left: 50%;">
+					<div class="modal-content">
+						<div id="loginPage">
+						</div>
+					</div>
+				</div>
+			</div>
+			<?php echo $logoutModal; ?>

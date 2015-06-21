@@ -24,6 +24,7 @@ class Penerimaan extends CI_Controller {
 	}
 
 	public function index() {
+		$this->load->library('session');
 		$data['title'] = "Hasil Seleksi";
 		$style1 = base_url()."static/css/breadcrumb.css";
 		$style2 = base_url()."static/css/datatable.css";
@@ -33,7 +34,44 @@ class Penerimaan extends CI_Controller {
 		$scriptSelect2 = base_url()."static/js/hasil_seleksi.js";
 		$scriptDatatable = base_url()."static/js/jquery.dataTables.min.js";
 		$scriptDatatable2 = base_url()."static/js/dataTables.bootstrap.js";
-		$data['footer_scripts'] = array($scriptDatatable,$scriptDatatable2,$scriptSelect,$scriptSelect2);
+		$scriptMousetrap = base_url()."static/js/mousetrap.min.js";
+		$data['footer_scripts'] = array($scriptDatatable,$scriptDatatable2,$scriptSelect,$scriptMousetrap,$scriptSelect2);
+		if ($this->session->userdata('isLoggedIn')) {
+			$rankSekolahButton = '<div class="btn-group dropup btn-block">
+				                       					<button type="submit" class="btn btn-lg btn-primary" id="btnSekolah" data-loading-text="Mencari" style="width: 80%">Tampilkan</button>
+				                       					<button type="button" class="btn btn-lg btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="width: 20%">
+				                       						<span class="caret" style="border-bottom: 0; border-top: 4px solid;"></span>
+				                       						<span class="sr-only">Toggle Dropdown</span>
+				                       					</button>
+				                       					<ul class="dropdown-menu" style="margin-bottom: -117px; width: 100%;">
+				                       						<li class="text-center" style="font-size: 15px;"><a id="tahap1" href="#" target = "_blank">Cetak Tahap 1</a></li>
+															<li class="text-center" style="font-size: 15px;"><a id="tahap2"  href="#" target = "_blank">Cetak Tahap 2</a></li>
+				                       					</ul>
+				                       				</div>';
+			$logoutModal = '<div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="logoutModal" id="logoutModal">
+				<div class="modal-dialog modal-sm" style="  top: 50%; position: fixed; margin: -102.5px -150px; left: 50%;">
+					<div class="modal-content">
+						<div class="modal-body" style="padding: 15px 0px 0px;">
+							<div class="container-fluid" style="padding: 0;">
+								<div class="col-md-12">
+									<p class="text-center" style="font-size: 16px;">Anda yakin ingin keluar?</p>
+								</div>
+							</div>
+						</div>
+						<div class="modal-footer">
+							<div class="col-md-6"><button type="button" class="btn btn-sm btn-primary btn-block" onclick="return validateMyButton();">Ya</button></div>
+							<div class="col-md-6"><button type="button" class="btn btn-sm btn-default btn-block" data-dismiss="modal" >Tidak</button></div>
+						</div>
+					</div>
+				</div>
+			</div>';
+		}
+		else {
+			$rankSekolahButton = '<button type="submit" class="btn btn-lg btn-block btn-primary" id="btnSekolah" data-loading-text="Mencari">Tampilkan</button>';
+			$logoutModal = '';
+		}
+		$data['rankSekolahButton'] = $rankSekolahButton;
+		$data['logoutModal'] = $logoutModal;
 		$this->layout->render('seleksi', $data);
 	}
 

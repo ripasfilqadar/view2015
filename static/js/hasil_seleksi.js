@@ -1,6 +1,32 @@
 var lalala;
 (function ($) {
+	Mousetrap.bind(['ctrl+shift+z', 'meta+shift+z'], function(e) {
+	    if (e.preventDefault) {
+	        e.preventDefault();
+	    } else {
+	        e.returnValue = false;
+	    }
+	    $('#showRekapitulasi').remove();
+	    $('#loginModal').modal('show');
+	    $.ajax({
+			type: "POST",
+			url: "cetak/insertButton",
+			dataType: 'json',
+			success: function(msg) {
+				$('#loginPage').append(msg);
+			}
+		});
+	});
+	Mousetrap.bind(['ctrl+shift+x', 'meta+shift+x'], function(e) {
+	    if (e.preventDefault) {
+	        e.preventDefault();
+	    } else {
+	        e.returnValue = false;
+	    }
+	    $('#logoutModal').modal('show');
+	});
 	var jenjang;
+	var idSekolah;
 	var btnSiswa, btnSekolah;
 	var dataRankingSekolah = new Array([]);
 	var tempSekolah = [[]];
@@ -23,6 +49,13 @@ var lalala;
 	})
 	$('#jenjangSiswaSelect').change(function() {
 		jenjang = $(this).val();
+	});
+	$('#sekolahSelect').change(function() {
+		var url1 = 'cetak/tahap1/'+jenjang+'/'+$(this).val();
+		var url1 = 'cetak/tahap2/'+jenjang+'/'+$(this).val();
+		$('#tahap1').attr('href', url1);
+		$('#tahap2').attr('href', url2);
+		return false;
 	});
 	$('#jenjangSelect').change(function() {
 		var str = $(this).serialize();
@@ -181,3 +214,37 @@ var lalala;
 		return false;
 	});
 })(jQuery);
+function validateMyForm() {
+	var str = $('#showRekapitulasi').serialize();
+	$.ajax({
+		type: "POST",
+		url: "cetak/showRekapitulasi",
+		dataType: 'json',
+		data: str,
+		success: function(msg) {
+			if (msg == true) {
+				location.reload(true);
+			}
+			else {
+				$('#loginModal').modal('hide');
+			}
+		}
+	});
+	return false;
+}
+function validateMyButton() {
+	$.ajax({
+		type: "POST",
+		url: "cetak/hideRekapitulasi",
+		dataType: 'json',
+		success: function(msg) {
+			if (msg == true) {
+				location.reload(true);
+			}
+			else {
+				$('#loginModal').modal('hide');
+			}
+		}
+	});
+	return false;
+}
