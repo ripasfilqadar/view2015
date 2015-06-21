@@ -46,6 +46,8 @@ class Penerimaan extends CI_Controller {
 				                       					<ul class="dropdown-menu" style="margin-bottom: -117px; width: 100%;">
 				                       						<li class="text-center" style="font-size: 15px;"><a id="tahap1" href="#" target = "_blank">Cetak Tahap 1</a></li>
 															<li class="text-center" style="font-size: 15px;"><a id="tahap2"  href="#" target = "_blank">Cetak Tahap 2</a></li>
+															<li class="text-center" style="font-size: 15px;"><a id="tahap1b" href="#" target = "_blank">Cetak Tahap 1 (Custom)</a></li>
+															<li class="text-center" style="font-size: 15px;"><a id="tahap2b"  href="#" target = "_blank">Cetak Tahap 2 (Custom)</a></li>
 				                       					</ul>
 				                       				</div>';
 			$logoutModal = '<div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="logoutModal" id="logoutModal">

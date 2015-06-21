@@ -127,18 +127,16 @@
 		                       		<div class="row" style="color: #888888; font-weight: 200; margin-top: 10px; display: none" id="resultSekolah">
 			                       		<div class="row-fluid">
 			                       			<div class="col-md-12">
-					                       		<div class="col-md-12">
-				                        			<table class="table table-bordered table-hover table-striped rankSekolah" id="ranking_sekolah">
-							                            <thead style="background-color: #dde4e6; font-weight: 700; text-align: center;">
-							                            	<tr>
-							                            		<td class="col-md-2">No. URUT</td>
-							                            		<td class="col-md-4">NAMA LENGKAP</td>
-							                            		<td class="col-md-4">ASAL SEKOLAH</td>
-							                            		<td class="col-md-2">NILAI AKHIR</td>
-							                            	</tr>
-							                            </thead>
-							                        </table>
-					                        	</div>
+			                        			<table class="table table-bordered table-hover table-striped rankSekolah" id="ranking_sekolah" width="100%">
+						                            <thead style="background-color: #dde4e6; font-weight: 700; text-align: center;">
+						                            	<tr>
+						                            		<td class="col-md-2">No. URUT</td>
+						                            		<td class="col-md-4">NAMA LENGKAP</td>
+						                            		<td class="col-md-4">ASAL SEKOLAH</td>
+						                            		<td class="col-md-2">NILAI AKHIR</td>
+						                            	</tr>
+						                            </thead>
+						                        </table>
 				                        	</div>
 			                        	</div>
 			                        	<div class="row-fluid">

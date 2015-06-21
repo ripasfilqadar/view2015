@@ -52,9 +52,13 @@ var lalala;
 	});
 	$('#sekolahSelect').change(function() {
 		var url1 = 'cetak/tahap1/'+jenjang+'/'+$(this).val();
-		var url1 = 'cetak/tahap2/'+jenjang+'/'+$(this).val();
+		var url2 = 'cetak/tahap2/'+jenjang+'/'+$(this).val();
 		$('#tahap1').attr('href', url1);
 		$('#tahap2').attr('href', url2);
+		var url1 = 'cetak/tahap1/'+jenjang+'/'+$(this).val()+'/custom';
+		var url2 = 'cetak/tahap2/'+jenjang+'/'+$(this).val()+'/custom';;
+		$('#tahap1b').attr('href', url1);
+		$('#tahap2b').attr('href', url2);
 		return false;
 	});
 	$('#jenjangSelect').change(function() {
@@ -195,6 +199,7 @@ var lalala;
 							$("#resultSekolah").fadeIn("slow");
 							$('#ranking_sekolah').DataTable( {
 								"data" : dataRankingSekolah,
+								"dom": '<"row-fluid"<"col-md-6"l><"col-md-6"f><"col-md-12"t><"col-md-12"p>',
 								"language": {
 									"info": "",
 									"paginate": {

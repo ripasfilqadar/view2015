@@ -82,7 +82,7 @@ class Cetak extends CI_Controller {
 		echo json_encode(TRUE);
 	}
 
-	public function tahap1($jenjang,$id_sekolah) {
+	public function tahap1($jenjang,$id_sekolah,$footer="normal") {
 		if ($this->session->userdata('isLoggedIn')) {
 			$this->load->model('ranking');
 			$this->load->model('sekolah');
@@ -115,7 +115,12 @@ class Cetak extends CI_Controller {
 			$pdfku->addInfo('Title','Hasil Rekapitulasi');
 			$pdfku->addInfo('Author','PPDB HELPER');
 			$pdfku->addInfo('Application','PPDB Online Kabupaten Sidoarjo');
-			$pdfku->ezSetCmMargins("3.5","3","3","3");
+			if ($footer == "normal") {
+				$pdfku->ezSetCmMargins("3.5","3","3","3");
+			}
+			else {
+				$pdfku->ezSetCmMargins("3.5","7","3","3");
+			}
 			$nama_sekolah= $this->sekolah->getSekolahById($id_sekolah)['NAMA_SEKOLAH'];
 			if($jenjang == "smk") {
 				$jurusan = $this->sekolah->getSekolahById($id_sekolah)['JURUSAN'];
@@ -192,7 +197,7 @@ class Cetak extends CI_Controller {
 		}
 	}
 
-	public function tahap2($jenjang,$id_sekolah) {
+	public function tahap2($jenjang,$id_sekolah,$footer = "normal") {
 		if ($this->session->userdata('isLoggedIn')) {
 			$this->load->model('ranking');
 			$this->load->model('sekolah');
@@ -225,7 +230,12 @@ class Cetak extends CI_Controller {
 			$pdfku->addInfo('Title','Hasil Rekapitulasi');
 			$pdfku->addInfo('Author','PPDB HELPER');
 			$pdfku->addInfo('Application','PPDB Online Kabupaten Sidoarjo');
-			$pdfku->ezSetCmMargins("3.5","3","3","3");
+			if ($footer == "normal") {
+				$pdfku->ezSetCmMargins("3.5","3","3","3");
+			}
+			else {
+				$pdfku->ezSetCmMargins("3.5","7","3","3");
+			}
 			$nama_sekolah= $this->sekolah->getSekolahById($id_sekolah)['NAMA_SEKOLAH'];
 			if($jenjang == "smk") {
 				$jurusan = $this->sekolah->getSekolahById($id_sekolah)['JURUSAN'];
@@ -289,7 +299,7 @@ class Cetak extends CI_Controller {
 				)
 			);
 			$pdfku->ezTable( $data, $cols_db, '', $option_db);
-			$pdfku->addText(390,($pdfku->y)-40,10,"SIDOARJO, 29 JUNI 2015");
+			$pdfku->addText(390,($pdfku->y)-40,10,"SIDOARJO, 2 JULI 2015");
 			$pdfku->addText(390,($pdfku->y)-53,10,"KEPALA DINAS PENDIDIKAN");
 			$pdfku->addText(390,($pdfku->y)-66,10,"KABUPATEN SIDOARJO");
 			$pdfku->addText(390,($pdfku->y)-145,10,"<b>Drs. MUSTAIN, M.Pd.I</b>");
