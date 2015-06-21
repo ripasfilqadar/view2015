@@ -16,7 +16,7 @@
 		            <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
 		                <div class="panel panel-ppdb">
 		                    <div class="panel-heading" role="tab" id="headingOne">
-		                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne"><h4 class="page_subtitle">HASIL SELEKSI PER SISWA</h4></a>
+		                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne"><h4 class="page_subtitle">HASIL SELEKSI PER SISWA (SEMENTARA)</h4></a>
 		                    </div>
 		                    <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
 		                       	<div class="panel-body">
@@ -79,9 +79,11 @@
 						                        <div class="panel panel-default" style="margin-top: 15px; border-color: rgb(157, 201, 192);">
 													<div class="panel-body" style="padding-top: 7px;">
 														<p style="text-align: center; margin: 0; color: rgb(112, 130, 118); font-size: 12px; font-weight: 500; text-transform: uppercase; letter-spacing: 1px; padding-bottom: 7px; border-bottom: 1px solid #C9C7C7; margin-bottom: 10px;">DITERIMA PADA PILIHAN KE-<span id="PILIHAN" style="font-weight: 700; color: rgb(26, 188, 156); font-size: 15px; position: relative; top: 1px;"></span> DI SEKOLAH:</p>
-														<h1 id="NAMA_SEKOLAH" class="penerimaan" style="margin-bottom: 10px"></h1>
+														<div id="NAMA_SEKOLAH"></div>
+														
 														<p style="text-align: center; margin: 0; color: rgb(112, 130, 118); font-size: 12px; font-weight: 500; text-transform: uppercase; letter-spacing: 1px; padding-bottom: 7px; border-bottom: 1px solid #C9C7C7; margin-bottom: 10px;">DENGAN PERINGKAT:</p>
 														<h1 class="penerimaan"><span id="RANKING"></span> <span style="font-size: 14px; position: relative; top: -6px;">DARI</span> <span id="MAX_RANKING"></span></h1>
+														<p class="text-center noteSementara blink">Perhatian! Hasil Perankingan Sementara!</p>
 													</div>
 												</div>
 			                        		</div>
@@ -92,7 +94,7 @@
 		                </div>
 		                <div class="panel panel-ppdb">
 		                    <div class="panel-heading" role="tab" id="headingTwo">
-		                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="true" aria-controls="collapseOne"><h4 class="page_subtitle">HASIL SELEKSI PER SEKOLAH</h4></a>
+		                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="true" aria-controls="collapseOne"><h4 class="page_subtitle">HASIL SELEKSI PER SEKOLAH (SEMENTARA)</h4></a>
 		                    </div>
 		                    <div id="collapseTwo" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingTwo">
 		                       	<div class="panel-body">
@@ -135,6 +137,7 @@
 					                            </thead>
 					                        </table>
 			                        	</div>
+		                        		<p class="text-center noteSementara blink">Perhatian! Hasil Perankingan Sementara!</p>
 		                        	</div>
 		                       	</div>
 		                    </div>
