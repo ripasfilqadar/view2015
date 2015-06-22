@@ -1,5 +1,4 @@
 var lalala;
-// var tableRanking = $('#ranking_sekolah').dataTable();
 (function ($) {
 	Mousetrap.bind(['ctrl+shift+z', 'meta+shift+z'], function(e) {
 	    if (e.preventDefault) {
@@ -49,9 +48,13 @@ var lalala;
 		|| navigator.userAgent.match(/iPod/i)
 		|| navigator.userAgent.match(/BlackBerry/i)
 		|| navigator.userAgent.match(/Windows Phone/i)
-		){}
+		){
+		console.log("Android");
+		alert("Perhatian! Beberapa fitur mungkin tidak dapat berfungsi pada Mobile Browser. Silahkan gunakan Komputer atau Laptop.");
+	}
 	else {
 		$(function () {
+			console.log("Bukan Android");
 			$("select").selectpicker({style: 'btn-hg btn-block btn-lg btn-primary', menuStyle: 'dropdown'});
 		});	
 	}
@@ -192,7 +195,6 @@ var lalala;
 					dataType: 'json',
 					data: str,
 					success: function(msg) {
-						// $('#ranking_sekolah').dataTable().fnClearTable();
 						btnSekolah.button('reset');
 						if (msg != null) {
 							var iterate = 1;
