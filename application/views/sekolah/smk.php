@@ -250,8 +250,8 @@
                         <tr>
                             <td style="text-align: center" rowspan="7">75</td>
                             <td rowspan="7">SMK Negeri 1 Jabon</td>
-                            <td rowspan="7">Jl. Dukuhsari 1 Jabon </td>
-                            <td style="text-align: center; border-right: 1px solid #dddddd;" rowspan="7">031-31261000</td>
+                            <td rowspan="7">Desa Panggreh Kecamatan Jabon </td>
+                            <td style="text-align: center; border-right: 1px solid #dddddd;" rowspan="7">0343-656413</td>
                         </tr>
                         <tr>
                             <td style="text-align: center">043</td>
