@@ -75,10 +75,14 @@ class Penerimaan extends CI_Controller {
 
 	function getRankSekolah() {
 		$this->load->model('ranking');
-		$jenjang = $this->input->post('jenjang');
+		$jenjang = strtolower($this->input->post('jenjang'));
 		$sekolah = $this->input->post('sekolah');
 		if (empty($sekolah)) {
 			$result = NULL;
+		}
+		elseif ($jenjang == "sd") {
+			$string = file_get_contents('http://www.sd.ppdbsidoarjo.net/sd_diterima.php?id_sekolah='.$sekolah);
+			$result = substr(strstr($string, '<tr class="odd">'), 0, strpos(strstr($string, '<tr class="odd">'), "</tbody>"));
 		}
 		else {
 			$result = $this->ranking->getRankSekolah($jenjang,$sekolah);
@@ -100,5 +104,10 @@ class Penerimaan extends CI_Controller {
 			$result['IMAGE'] = base_url()."static/images/".strtoupper($jenjang)."_".strtoupper(substr($result['JENIS_KEL'],0,1)).".png";
 		}
 		echo json_encode($result);
+	}
+
+	function tes() {
+		$str = strtotime(date("M d Y ")) - (strtotime("Jun 19 2015"));
+		echo floor($str/3600/24);
 	}
 }

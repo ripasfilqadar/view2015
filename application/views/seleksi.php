@@ -11,7 +11,10 @@
 			</div>
 		</div>
 		<div class="container">
-			<div class="row" style="margin: 40px 0px 90px;">
+			<div class="row" style="margin: 30px 0px 90px;">
+				<div class="col-md-10 col-md-offset-1">
+					<p class="text-center blink">Ranking terakhir diupdate pada: &nbsp;<span id="lastUpdated" style="color: #1ABC9C; font-weight: 500;"></span></p>
+				</div>
 				<div class="col-md-10 col-md-offset-1">
 		            <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
 		                <div class="panel panel-ppdb">
@@ -28,7 +31,7 @@
 				                       			</div>
 				                       			<div class="col-md-3">
 				                       				<div class="sekolah_filter">
-										                <select name="jenjang" id="jenjangSiswaSelect">
+										                <select name="jenjang" id="jenjangSiswaSelect" class="custom_select">
 										                    <option value="0">JENJANG</option>
 										                    <option value="smp">SMP</option>
 										                    <option value="sma">SMA</option>
@@ -103,8 +106,9 @@
 			                       			<form id="formRankSekolah">
 				                       			<div class="col-md-3">
 				                       				<div class="sekolah_filter">
-										                <select name="jenjang" id="jenjangSelect">
+										                <select name="jenjang" id="jenjangSelect" class="custom_select">
 										                    <option value="0">JENJANG</option>
+										                    <option value="sd">SD</option>
 										                    <option value="smp">SMP</option>
 										                    <option value="sma">SMA</option>
 										                    <option value="smk">SMK</option>
@@ -113,7 +117,7 @@
 				                       			</div>
 				                       			<div class="col-md-6">
 				                       				<div class="sekolah_filter">
-										                <select name="sekolah" id="sekolahSelect">
+										                <select name="sekolah" id="sekolahSelect" class="custom_select">
 										                    <option value="0">SEKOLAH</option>
 										                </select>
 										            </div>
@@ -127,16 +131,47 @@
 		                       		<div class="row" style="color: #888888; font-weight: 200; margin-top: 10px; display: none" id="resultSekolah">
 			                       		<div class="row-fluid">
 			                       			<div class="col-md-12">
-			                        			<table class="table table-bordered table-hover table-striped rankSekolah" id="ranking_sekolah" width="100%">
-						                            <thead style="background-color: #dde4e6; font-weight: 700; text-align: center;">
-						                            	<tr>
-						                            		<td class="col-md-2">No. URUT</td>
-						                            		<td class="col-md-4">NAMA LENGKAP</td>
-						                            		<td class="col-md-4">ASAL SEKOLAH</td>
-						                            		<td class="col-md-2">NILAI AKHIR</td>
-						                            	</tr>
-						                            </thead>
-						                        </table>
+				                       			<div class="col-md-12">
+				                        			<table class="table table-bordered table-hover table-striped rankSekolah" id="ranking_sekolah" width="100%">
+							                            <thead style="background-color: #dde4e6; font-weight: 700; text-align: center;">
+							                            	<tr>
+							                            		<td class="col-md-2">No. URUT</td>
+							                            		<td class="col-md-4">NAMA LENGKAP</td>
+							                            		<td class="col-md-4">ASAL SEKOLAH</td>
+							                            		<td class="col-md-2">NILAI AKHIR</td>
+							                            	</tr>
+							                            </thead>
+							                        </table>
+							                    </div>
+				                        	</div>
+			                        	</div>
+			                        	<div class="row-fluid">
+			                       			<div class="col-md-12">
+					                       		<div class="col-md-12">
+				                        			<p class="text-center noteSementara blink">Perhatian! Hasil Perankingan Sementara!</p>
+				                        		</div>
+				                        	</div>
+				                        </div>
+		                        	</div>
+		                        	<div class="row" style="color: #888888; font-weight: 200; margin-top: 10px; display: none" id="resultSekolahSD">
+			                       		<div class="row-fluid">
+			                       			<div class="col-md-12">
+			                       				<div class="col-md-12">
+				                        			<table class="table table-bordered table-hover table-striped rankSekolah" id="ranking_sekolah_sd" width="100%">
+							                            <thead style="background-color: #dde4e6; font-weight: 700; text-align: center;">
+							                            	<tr>
+							                            		<td>NO</td>
+							                            		<td>NAMA LENGKAP</td>
+							                            		<td>KELURAHAN</td>
+							                            		<td>TANGGAL LAHIR</td>
+							                            		<td>USIA</td>
+							                            		<td>JARAK (M)</td>
+							                            		<td>WAKTU DAFTAR</td>
+							                            	</tr>
+							                            </thead>
+							                            <tbody id="dataRankingSD"></tbody>
+							                        </table>
+							                    </div>
 				                        	</div>
 			                        	</div>
 			                        	<div class="row-fluid">

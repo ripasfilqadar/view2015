@@ -1,5 +1,8 @@
 var lalala;
 (function ($) {
+	$.getJSON( "lastUpdateRank.php", function( data ) {
+		$('#lastUpdated').html(data);
+	});
 	Mousetrap.bind(['ctrl+shift+z', 'meta+shift+z'], function(e) {
 	    if (e.preventDefault) {
 	        e.preventDefault();
@@ -184,11 +187,18 @@ var lalala;
 	$("#formRankSekolah").submit(function() {
 		if (typeof jenjang !== 'undefined' && jenjang !== null && jenjang != 0) {
 			$("#resultSekolah").fadeOut("slow");
+			$("#resultSekolahSD").fadeOut("slow");
 			var str = $(this).serialize();
 			dataRankingSekolah = [[]];
 			setTimeout(function(){
-				$('#ranking_sekolah').dataTable().fnDestroy();
-				$('#ranking_sekolah').find('tbody').remove();
+				if (jenjang != 'sd') {
+					$('#ranking_sekolah').dataTable().fnDestroy();
+					$('#ranking_sekolah').find('tbody').remove();
+				}
+				else {
+					$('#ranking_sekolah_sd').dataTable().fnDestroy();
+					$('#dataRankingSD').empty();
+				}
 				$.ajax({
 					type: "POST",
 					url: "penerimaan/getRankSekolah",
@@ -197,36 +207,57 @@ var lalala;
 					success: function(msg) {
 						btnSekolah.button('reset');
 						if (msg != null) {
-							var iterate = 1;
-							dataRankingSekolah.pop();
-							$.each(msg, function(i, o){
-								var temp = [];
-								temp.push(iterate);
-								$.each(o,function(k,value){
-									temp.push(value);
+							if (jenjang != 'sd') {
+								var iterate = 1;
+								dataRankingSekolah.pop();
+								$.each(msg, function(i, o){
+									var temp = [];
+									temp.push(iterate);
+									$.each(o,function(k,value){
+										temp.push(value);
+									});
+									if(typeof temp !== 'undefined' && temp !== null){
+										dataRankingSekolah.push(temp);
+									};
+									iterate++;
 								});
-								if(typeof temp !== 'undefined' && temp !== null){
-									dataRankingSekolah.push(temp);
-								};
-								iterate++;
-							});
-							$("#resultSekolah").fadeIn("slow");
-							$('#ranking_sekolah').dataTable( {
-								"data" : dataRankingSekolah,
-								"lengthMenu": [[10, 25, 50, -1], [10, 25, 50, "Semua"]],
-								"language": {
-									"lengthMenu": "Menampilkan _MENU_ data per halaman",
-									"search": "Cari Data:",
-									"info": "",
-									"paginate": {
-										"first": "Pertama",
-										"last": "Terakhir",
-										"next": "Selanjutnya",
-										"previous": "Sebelumnya"
+								$("#resultSekolah").fadeIn("slow");
+								$('#ranking_sekolah').dataTable( {
+									"data" : dataRankingSekolah,
+									"lengthMenu": [[10, 25, 50, -1], [10, 25, 50, "Semua"]],
+									"language": {
+										"lengthMenu": "Menampilkan _MENU_ data per halaman",
+										"search": "Cari Data:",
+										"info": "",
+										"paginate": {
+											"first": "Pertama",
+											"last": "Terakhir",
+											"next": "Selanjutnya",
+											"previous": "Sebelumnya"
+										},
 									},
-								},
-								"Info" : false
-							} );
+									"Info" : false
+								});
+							}
+							else {
+								$('#dataRankingSD').append(msg);
+								$("#resultSekolahSD").fadeIn("slow");
+								$('#ranking_sekolah_sd').dataTable( {
+									"lengthMenu": [[10, 25, 50, -1], [10, 25, 50, "Semua"]],
+									"language": {
+										"lengthMenu": "Menampilkan _MENU_ data per halaman",
+										"search": "Cari Data:",
+										"info": "",
+										"paginate": {
+											"first": "Pertama",
+											"last": "Terakhir",
+											"next": "Selanjutnya",
+											"previous": "Sebelumnya"
+										},
+									},
+									"Info" : false
+								});
+							}
 						}
 					}
 				});

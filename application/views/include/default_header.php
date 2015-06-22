@@ -36,14 +36,14 @@
 		<nav class="navbar navbar-default navbar-fixed-top">
 			<div class="container">
 				<div class="navbar-header">
-					<img src="<?php echo base_url(); ?>static/images/logo_sda2.png" class="top_logo left">
+					<img src="<?php echo base_url(); ?>static/images/logo_sda2.png" class="top_logo left hidden-xs">
 					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
 						<span class="sr-only">Toggle navigation</span>
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 					</button>
-					<a class="navbar-brand left" href="<?php echo base_url(); ?>" style="font-weight: 300; font-size: 19px; position: relative; top: 10px; padding-left: 20px;"><span style="font-weight: 600;">PPDB</span> Sidoarjo 2015</a>
+					<a class="navbar-brand left web_title" href="<?php echo base_url(); ?>"><span style="font-weight: 600;">PPDB</span> Sidoarjo 2015</a>
 				</div>
 				<div id="navbar" class="navbar-collapse collapse">
 					<ul class="nav navbar-nav navbar-right">
@@ -53,6 +53,7 @@
 							<ul class="dropdown-menu" role="menu">
 								<li><a href="<?php echo base_url(); ?>informasi/jadwal_pelaksanaan">JADWAL PELAKSANAAN</a></li>
 								<li><a href="<?php echo base_url(); ?>informasi/status_pendaftaran">STATUS PENDAFTARAN</a></li>
+								<li><a href="<?php echo base_url(); ?>informasi/rekap_harian">STATISTIK HARIAN</a></li>
 							</ul>
 						</li>
 						<li <?php if ($this->uri->segment(1) == "penerimaan") { ?>class="active"<?php } ?>><a href="<?php echo base_url(); ?>penerimaan">HASIL SELEKSI</a></li>

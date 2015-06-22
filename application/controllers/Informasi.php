@@ -1,22 +1,6 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
 class Informasi extends CI_Controller {
-
-	/**
-	 * Index Page for this controller.
-	 *
-	 * Maps to the following URL
-	 * 		http://example.com/index.php/welcome
-	 *	- or -  
-	 * 		http://example.com/index.php/welcome/index
-	 *	- or -
-	 * Since this controller is set as the default controller in 
-	 * config/routes.php, it's displayed at http://example.com/
-	 *
-	 * So any other public methods not prefixed with an underscore will
-	 * map to /index.php/welcome/<method_name>
-	 * @see http://codeigniter.com/user_guide/general/urls.html
-	 */
 	
 	public function __construct() {
 		parent::__construct();
@@ -47,6 +31,22 @@ class Informasi extends CI_Controller {
 		$this->layout->render('informasi/status_pendaftaran', $data);
 	}
 
+	public function rekap_harian() {
+		$this->load->model('sekolah');
+		$data['title'] = "Statistik Harian";
+		$style1 = base_url()."static/css/breadcrumb.css";
+		$style2 = base_url()."static/css/datatable.css";
+		$scriptDatatable = base_url()."static/js/jquery.dataTables.min.js";
+		$scriptDatatable2 = base_url()."static/js/dataTables.bootstrap.js";
+		$data['styles'] = array($style1,$style2);
+		$data['smp'] = $this->sekolah->rekap_harian('smp');
+		$data['sma'] = $this->sekolah->rekap_harian('sma');
+		$data['smk'] = $this->sekolah->rekap_harian('smk');
+		$statistik_harian = base_url()."static/js/statistik_harian.js";
+		$data['footer_scripts'] = array($scriptDatatable, $scriptDatatable2, $statistik_harian);
+		$this->layout->render('informasi/rekap_harian', $data);
+	}
+
 	function cekPendaftar() {
 		$this->load->model('pendaftar');
 		$nomor_ujian = $this->input->post('nomor_ujian');
@@ -63,6 +63,3 @@ class Informasi extends CI_Controller {
 		echo json_encode($result);
 	}
 }
-
-/* End of file welcome.php */
-/* Location: ./application/controllers/welcome.php */

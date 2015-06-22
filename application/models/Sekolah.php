@@ -35,4 +35,19 @@ class Sekolah extends CI_Model {
 			return NULL;
 		}
 	}
+
+	function rekap_harian($jenjang) {
+		$table = "terima_".$jenjang."_2";
+		$this->db->select("t.NAMA_SEKOLAH, t.JURUSAN, min(j.NILAI_AKHIR) as MIN, max(j.NILAI_AKHIR) as MAX, count(j.NILAI_AKHIR) as PENDAFTAR, t.PAGUPSB");
+		$this->db->from("pagu_sekolah t");
+		$this->db->join($table." j","j.DITERIMA = t.ID_SEKOLAH");
+		$this->db->group_by("t.NAMA_SEKOLAH, t.JURUSAN");
+		$result = $this->db->get();
+		if ($result->num_rows() > 0) {
+			return $result->result_array();
+		}
+		else {
+			return NULL;
+		}
+	}
 }
