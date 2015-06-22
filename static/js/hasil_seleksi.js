@@ -1,4 +1,5 @@
 var lalala;
+// var tableRanking = $('#ranking_sekolah').dataTable();
 (function ($) {
 	Mousetrap.bind(['ctrl+shift+z', 'meta+shift+z'], function(e) {
 	    if (e.preventDefault) {
@@ -41,9 +42,19 @@ var lalala;
 			btnSekolah = $(this).button('loading');
 		};
 	})
-	$(function () {
-		$("select").selectpicker({style: 'btn-hg btn-block btn-lg btn-primary', menuStyle: 'dropdown'});
-	});	
+	if ( navigator.userAgent.match(/Android/i)
+		|| navigator.userAgent.match(/webOS/i)
+		|| navigator.userAgent.match(/iPhone/i)
+		|| navigator.userAgent.match(/iPad/i)
+		|| navigator.userAgent.match(/iPod/i)
+		|| navigator.userAgent.match(/BlackBerry/i)
+		|| navigator.userAgent.match(/Windows Phone/i)
+		){}
+	else {
+		$(function () {
+			$("select").selectpicker({style: 'btn-hg btn-block btn-lg btn-primary', menuStyle: 'dropdown'});
+		});	
+	}
 	$('#error button').on('click', function () {
 		$("#error").fadeOut("slow");
 	})
@@ -181,6 +192,7 @@ var lalala;
 					dataType: 'json',
 					data: str,
 					success: function(msg) {
+						// $('#ranking_sekolah').dataTable().fnClearTable();
 						btnSekolah.button('reset');
 						if (msg != null) {
 							var iterate = 1;
@@ -197,10 +209,12 @@ var lalala;
 								iterate++;
 							});
 							$("#resultSekolah").fadeIn("slow");
-							$('#ranking_sekolah').DataTable( {
+							$('#ranking_sekolah').dataTable( {
 								"data" : dataRankingSekolah,
-								"dom": '<"row-fluid"<"col-md-6"l><"col-md-6"f><"col-md-12"t><"col-md-12"p>',
+								"lengthMenu": [[10, 25, 50, -1], [10, 25, 50, "Semua"]],
 								"language": {
+									"lengthMenu": "Menampilkan _MENU_ data per halaman",
+									"search": "Cari Data:",
 									"info": "",
 									"paginate": {
 										"first": "Pertama",
