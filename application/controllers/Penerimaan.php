@@ -81,7 +81,7 @@ class Penerimaan extends CI_Controller {
 			$result = NULL;
 		}
 		elseif ($jenjang == "sd") {
-			$string = file_get_contents('http://www.sd.ppdbsidoarjo.net/sd_diterima.php?id_sekolah='.$sekolah);
+			$string = file_get_contents('http://180.250.248.75/sd_diterima.php?id_sekolah='.$sekolah);
 			$result = substr(strstr($string, '<tr class="odd">'), 0, strpos(strstr($string, '<tr class="odd">'), "</tbody>"));
 		}
 		else {
