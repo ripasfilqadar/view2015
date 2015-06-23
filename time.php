@@ -1,0 +1,1 @@
+<?php echo json_encode("<?php echo json_encode("Perankingan Terakhir 07:25:1 2015-06-23"); ?>"); ?>
