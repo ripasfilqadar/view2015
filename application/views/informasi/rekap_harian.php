@@ -1,7 +1,7 @@
 		</div>
 		<div class="row-fluid breadcrumb_container">
 			<div class="container">
-				<div class="col-md-6 left page_info"><p class="page_subtitle">REKAPITULASI PENDAFTARAN SEKOLAH HARI KE-<?php $str = strtotime(date("M d Y ")) - (strtotime("Jun 19 2015")); if(date("d") <= 24 and date("n") <= 6 and date("Y") <= 2015) { echo floor($str/3600/24); } else { echo "5"; } ?></p></div>
+				<div class="col-md-6 left page_info"><p class="page_subtitle">HASIL SELEKSI PENERIMAAN SISWA BARU PER &nbsp;<span id="lastUpdated" style="color: #1ABC9C;"></span></p></div>
 				<div class="col-md-6 right text-right" style="padding-right: 0">
 					<ol class="breadcrumb">
 						<li><a href="<?php echo base_url(); ?>">Beranda</a></li>
@@ -12,11 +12,6 @@
 			</div>
 		</div>
 		<div class="container">
-            <div class="row">
-                <div class="col-md-10 col-md-offset-1">
-                    <p class="text-center blink">Ranking terakhir diupdate pada: &nbsp;<span id="lastUpdated" style="color: #1ABC9C; font-weight: 500;"></span></p>
-                </div>
-            </div>
             <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
                 <div class="panel panel-ppdb">
                     <div class="panel-heading" role="tab" id="headingOne">
@@ -31,7 +26,6 @@
                                         <td>NA Tertinggi</td>
                                         <td>NA Terendah</td>
                                         <td>Pendaftar</td>
-                                        <td>Kuota</td>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -41,7 +35,6 @@
                                             <td><?php echo $sekolah["MAX"]; ?></td>
                                             <td><?php echo $sekolah["MIN"]; ?></td>
                                             <td><?php echo $sekolah["PENDAFTAR"]; ?></td>
-                                            <td><?php echo $sekolah["PAGUPSB"]; ?></td>
                                         </tr>
                                     <?php } ?>
                                 </tbody>
@@ -62,7 +55,6 @@
                                         <td>NA Tertinggi</td>
                                         <td>NA Terendah</td>
                                         <td>Pendaftar</td>
-                                        <td>Kuota</td>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -72,7 +64,6 @@
                                             <td><?php echo $sekolah["MAX"]; ?></td>
                                             <td><?php echo $sekolah["MIN"]; ?></td>
                                             <td><?php echo $sekolah["PENDAFTAR"]; ?></td>
-                                            <td><?php echo $sekolah["PAGUPSB"]; ?></td>
                                         </tr>
                                     <?php } ?>
                                 </tbody>
@@ -94,7 +85,6 @@
                                         <td>NA Tertinggi</td>
                                         <td>NA Terendah</td>
                                         <td>Pendaftar</td>
-                                        <td>Kuota</td>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -105,7 +95,6 @@
                                             <td><?php echo $sekolah["MAX"]; ?></td>
                                             <td><?php echo $sekolah["MIN"]; ?></td>
                                             <td><?php echo $sekolah["PENDAFTAR"]; ?></td>
-                                            <td><?php echo $sekolah["PAGUPSB"]; ?></td>
                                         </tr>
                                     <?php } ?>
                                 </tbody>

@@ -52,12 +52,10 @@ var lalala;
 		|| navigator.userAgent.match(/BlackBerry/i)
 		|| navigator.userAgent.match(/Windows Phone/i)
 		){
-		console.log("Android");
 		alert("Perhatian! Beberapa fitur mungkin tidak dapat berfungsi pada Mobile Browser. Silahkan gunakan Komputer atau Laptop.");
 	}
 	else {
 		$(function () {
-			console.log("Bukan Android");
 			$("select").selectpicker({style: 'btn-hg btn-block btn-lg btn-primary', menuStyle: 'dropdown'});
 		});	
 	}
@@ -217,13 +215,13 @@ var lalala;
 									$.each(o,function(k,value){
 										if (k != 'JALUR_DAFTAR') {
 											temp.push(value);
-											console.log(1);
 										}
 										else if (k == 'JALUR_DAFTAR') {
-											console.log(2);
 											if (value == '22') {
-												console.log(temp[1]);
-												temp[1] += ' (*)';
+												temp[2] += '*';
+											}
+											else if (value == '21') {
+												temp[2] += '**';
 											};
 										}
 									});

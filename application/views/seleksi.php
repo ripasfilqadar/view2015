@@ -13,7 +13,7 @@
 		<div class="container">
 			<div class="row" style="margin: 30px 0px 90px;">
 				<div class="col-md-10 col-md-offset-1">
-					<p class="text-center blink">Ranking terakhir diupdate pada: &nbsp;<span id="lastUpdated" style="color: #1ABC9C; font-weight: 500;"></span></p>
+					<p class="text-center">Ranking terakhir diupdate pada: &nbsp;<span id="lastUpdated" style="color: #1ABC9C; font-weight: 500;"></span></p>
 				</div>
 				<div class="col-md-10 col-md-offset-1">
 		            <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
@@ -144,6 +144,10 @@
 							                            </thead>
 							                        </table>
 							                    </div>
+							                    <div class="col-md-12">
+						                            <h3 style="  font-size: 13px; margin-top: 0; margin-bottom: 4px;">KETERANGAN:</h3>
+						                            <p style="  margin: 0; font-size: 13px; line-height: 1.4;">*)  Rekom domisili Sidoarjo<br>**) Rekom domisili luar Sidoarjo</p>
+						                        </div>
 				                        	</div>
 			                        	</div>
 			                        	<div class="row-fluid">
