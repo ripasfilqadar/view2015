@@ -211,10 +211,21 @@ var lalala;
 								var iterate = 1;
 								dataRankingSekolah.pop();
 								$.each(msg, function(i, o){
+									var flag = 0;
 									var temp = [];
 									temp.push(iterate);
 									$.each(o,function(k,value){
-										temp.push(value);
+										if (k != 'JALUR_DAFTAR') {
+											temp.push(value);
+											console.log(1);
+										}
+										else if (k == 'JALUR_DAFTAR') {
+											console.log(2);
+											if (value == '22') {
+												console.log(temp[1]);
+												temp[1] += ' (*)';
+											};
+										}
 									});
 									if(typeof temp !== 'undefined' && temp !== null){
 										dataRankingSekolah.push(temp);

@@ -9,7 +9,7 @@ class Ranking extends CI_Model {
 
 	function getRankSekolah($jenjang,$sekolah) {
 		$table = "terima_".$jenjang."_2";
-		$this->db->select("NAMA, ASAL_SEKOLAH, NILAI_AKHIR");
+		$this->db->select("NO_UJIAN, NAMA, ASAL_SEKOLAH, NILAI_AKHIR, JALUR_DAFTAR");
 		$this->db->from($table);
 		$this->db->where('DITERIMA',$sekolah);
 		$this->db->order_by('NILAI_AKHIR','DESC');

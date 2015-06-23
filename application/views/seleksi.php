@@ -135,10 +135,11 @@
 				                        			<table class="table table-bordered table-hover table-striped rankSekolah" id="ranking_sekolah" width="100%">
 							                            <thead style="background-color: #dde4e6; font-weight: 700; text-align: center;">
 							                            	<tr>
-							                            		<td class="col-md-2">No. URUT</td>
+							                            		<td class="col-md-1">No</td>
+							                            		<td class="col-md-2">No. UJIAN</td>
 							                            		<td class="col-md-4">NAMA LENGKAP</td>
 							                            		<td class="col-md-4">ASAL SEKOLAH</td>
-							                            		<td class="col-md-2">NILAI AKHIR</td>
+							                            		<td class="col-md-1">NA</td>
 							                            	</tr>
 							                            </thead>
 							                        </table>
