@@ -70,7 +70,7 @@
                             </table>
                         </div>
                     </div>
-                </div>
+                </div><!--
                 <div class="panel panel-ppdb">
                     <div class="panel-heading" role="tab" id="headingThree">
                         <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="true" aria-controls="collapseThree"><h4 class="page_subtitle">JENJANG SMK</h4></a>
@@ -101,5 +101,5 @@
                             </table>
                         </div>
                     </div>
-                </div>
+                </div> -->
             </div>

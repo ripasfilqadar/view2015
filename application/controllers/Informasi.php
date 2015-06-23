@@ -41,7 +41,7 @@ class Informasi extends CI_Controller {
 		$data['styles'] = array($style1,$style2);
 		$data['smp'] = $this->sekolah->rekap_harian('smp');
 		$data['sma'] = $this->sekolah->rekap_harian('sma');
-		$data['smk'] = $this->sekolah->rekap_harian('smk');
+		// $data['smk'] = $this->sekolah->rekap_harian('smk');
 		$statistik_harian = base_url()."static/js/statistik_harian.js";
 		$data['footer_scripts'] = array($scriptDatatable, $scriptDatatable2, $statistik_harian);
 		$this->layout->render('informasi/rekap_harian', $data);
