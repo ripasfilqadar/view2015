@@ -38,12 +38,19 @@ class Sekolah extends CI_Model {
 
 	function rekap_harian($jenjang) {
 		$table = "terima_".$jenjang."_2";
-		$this->db->select("t.NAMA_SEKOLAH, t.JURUSAN, min(j.NILAI_AKHIR) as MIN, max(j.NILAI_AKHIR) as MAX, count(j.NILAI_AKHIR) as PENDAFTAR");
-		$this->db->from("pagu_sekolah t");
-		$this->db->join($table." j","j.DITERIMA = t.ID_SEKOLAH", "left");
-		$this->db->where("t.NAMA_SEKOLAH like '%$jenjang%'");
-		$this->db->group_by("t.NAMA_SEKOLAH, t.JURUSAN");
-		$result = $this->db->get();
+		$tablePendaftar = "pendaftar_".$jenjang;
+		$query = "select 
+				t.NAMA_SEKOLAH,
+				t.JURUSAN,
+				l.MIN,
+				l.MAX,
+				count(j.NILAI_AKHIR) as PENDAFTAR
+			from pagu_sekolah t
+			left join $tablePendaftar j on j.PILIH1 = t.ID_SEKOLAH or j.PILIH2 = t.ID_SEKOLAH
+			left join (select max(NILAI_AKHIR) as MAX, min(NILAI_AKHIR) as MIN, DITERIMA from $table group by DITERIMA) l on l.DITERIMA = t.ID_SEKOLAH
+			where t.NAMA_SEKOLAH like '%$jenjang%'
+			group by t.NAMA_SEKOLAH, t.JURUSAN";
+		$result = $this->db->query($query);
 		if ($result->num_rows() > 0) {
 			return $result->result_array();
 		}
