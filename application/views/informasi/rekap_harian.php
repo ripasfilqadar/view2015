@@ -70,7 +70,7 @@
                             </table>
                         </div>
                     </div>
-                </div><!--
+                </div>
                 <div class="panel panel-ppdb">
                     <div class="panel-heading" role="tab" id="headingThree">
                         <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="true" aria-controls="collapseThree"><h4 class="page_subtitle">JENJANG SMK</h4></a>
@@ -92,14 +92,19 @@
                                         <tr>
                                             <td><?php echo $sekolah["NAMA_SEKOLAH"]; ?></td>
                                             <td><?php echo $sekolah["JURUSAN"]; ?></td>
-                                            <td><?php echo $sekolah["MAX"]; ?></td>
-                                            <td><?php echo $sekolah["MIN"]; ?></td>
+                                            <td><?php if(empty($sekolah["MAX"])) { echo "-"; } else { echo $sekolah["MAX"]; }?></td>
+                                            <td><?php if(empty($sekolah["MIN"])) { echo "-"; } else { echo $sekolah["MIN"]; }?></td>
                                             <td><?php echo $sekolah["PENDAFTAR"]; ?></td>
                                         </tr>
                                     <?php } ?>
                                 </tbody>
                             </table>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <p class="text-justify" style="font-size: 13px;"><strong style="font-weight: 600;">Keterangan: </strong>&nbsp;Hasil seleksi untuk jenjang SMK masih menunggu nilai NTMB (Nilai Tes Minat Bakat) dan NTK (Nilai Tes Kompetensi Keahlian)</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div> -->
+                </div>
             </div>

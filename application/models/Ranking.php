@@ -40,6 +40,7 @@ class Ranking extends CI_Model {
 					p.NAMA_SEKOLAH, 
 					t.NO_URUT AS RANKING, 
 					dt.maximum AS MAX_RANKING,
+					t.JALUR_DAFTAR,
 					IF(skl.JENIS_KEL = 'L','LAKI-LAKI','PEREMPUAN') AS JENIS_KEL
 				from 
 					$table t, 
@@ -74,6 +75,7 @@ class Ranking extends CI_Model {
 					p.NAMA_SEKOLAH, 
 					t.NO_URUT AS RANKING, 
 					dt.maximum AS MAX_RANKING,
+					t.JALUR_DAFTAR,
 					IF(skl.JENIS_KEL = 'L','LAKI-LAKI','PEREMPUAN') AS JENIS_KEL
 				from 
 					$table t, 
@@ -113,6 +115,7 @@ class Ranking extends CI_Model {
 					p.JURUSAN, 
 					t.NO_URUT AS RANKING, 
 					dt.maximum AS MAX_RANKING,
+					t.JALUR_DAFTAR,
 					IF(skl.JENIS_KEL = 'L','LAKI-LAKI','PEREMPUAN') AS JENIS_KEL
 				from 
 					$table t, 

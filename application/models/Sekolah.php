@@ -40,7 +40,8 @@ class Sekolah extends CI_Model {
 		$table = "terima_".$jenjang."_2";
 		$this->db->select("t.NAMA_SEKOLAH, t.JURUSAN, min(j.NILAI_AKHIR) as MIN, max(j.NILAI_AKHIR) as MAX, count(j.NILAI_AKHIR) as PENDAFTAR");
 		$this->db->from("pagu_sekolah t");
-		$this->db->join($table." j","j.DITERIMA = t.ID_SEKOLAH");
+		$this->db->join($table." j","j.DITERIMA = t.ID_SEKOLAH", "left");
+		$this->db->where("t.NAMA_SEKOLAH like '%$jenjang%'");
 		$this->db->group_by("t.NAMA_SEKOLAH, t.JURUSAN");
 		$result = $this->db->get();
 		if ($result->num_rows() > 0) {

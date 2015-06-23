@@ -142,6 +142,13 @@ var lalala;
 							$("#PILIHAN").html(msg.PILIHAN);
 							$("#RANKING").html(msg.RANKING);
 							$("#MAX_RANKING").html(msg.MAX_RANKING);
+							var domisili = msg.JALUR_DAFTAR;
+							if (domisili == '22') {
+								newData += '<tr><td style="font-weight: 400; text-align: right; width: 40%;">Domisili</td><td>Luar Sidoarjo</td></tr>';
+							}
+							else {
+								newData += '<tr><td style="font-weight: 400; text-align: right; width: 40%;">Domisili</td><td>Sidoarjo</td></tr>';
+							}
 							if (jenjang == 'smp') {
 								$("#NAMA_SEKOLAH").html('<h1 class="penerimaan" style="margin-bottom: 10px">'+msg.NAMA_SEKOLAH+'</h1>');
 								newData += '<tr><td style="font-weight: 400; text-align: right; width: 40%;">Nilai Bahasa Indonesia</td><td>'+msg.AKHIR_BIND+'</td></tr>';
@@ -217,11 +224,11 @@ var lalala;
 											temp.push(value);
 										}
 										else if (k == 'JALUR_DAFTAR') {
-											if (value == '22') {
-												temp[2] += '*';
+											if (value == '21') {
+												temp[2] += ' <span style="color: rgb(26, 188, 156);">(<strong style="font-weight: 600;">*</strong>)</span>';
 											}
-											else if (value == '21') {
-												temp[2] += '**';
+											else if (value == '22') {
+												temp[2] += ' <span style="color: rgb(26, 188, 156);">(<strong style="font-weight: 600;">**</strong>)</span>';
 											};
 										}
 									});
