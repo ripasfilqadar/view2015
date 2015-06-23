@@ -1,7 +1,7 @@
 		</div>
 		<div class="row-fluid breadcrumb_container">
 			<div class="container">
-				<div class="col-md-6 left page_info"><p class="page_subtitle">HASIL SELEKSI PENERIMAAN SISWA BARU PER &nbsp;<span id="lastUpdated" style="color: #1ABC9C;"></span></p></div>
+				<div class="col-md-6 left page_info"><p class="page_subtitle">HASIL SELEKSI PENERIMAAN SISWA BARU SEMENTARA PER &nbsp;<span id="lastUpdated" style="color: #1ABC9C;"></span></p></div>
 				<div class="col-md-6 right text-right" style="padding-right: 0">
 					<ol class="breadcrumb">
 						<li><a href="<?php echo base_url(); ?>">Beranda</a></li>
