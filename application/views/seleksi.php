@@ -61,7 +61,7 @@
 		                       			<div class="col-md-12">
 		                       				<div class="row-fluid">
 		                       					<div class="col-md-12">
-				                       				<div class="alert alert-warning" role="alert" style="margin-bottom: 0; background-color: #F1C40F; text-align: center; font-size: 13px; letter-spacing: 1px; font-weight: 500;">PESERTA DENGAN NO. UJIAN <span id="NO_UJIAN2" style="font-weight: 700;"></span> BELUM MASUK RANKING PADA SEKOLAH YANG DIPILIH</div>
+				                       				<div class="alert alert-warning" role="alert" style="margin-bottom: 0; background-color: #F1C40F; text-align: center; font-size: 13px; letter-spacing: 1px; font-weight: 500;">PESERTA DENGAN NO. UJIAN <span id="NO_UJIAN2" style="font-weight: 700;"></span> BELUM MASUK <strong style="font-weight: 700">PADA PERANKINGAN TAHAP I</strong> DI SEKOLAH YANG DIPILIH</div>
 												</div>
 											</div>
 		                       			</div>
@@ -95,12 +95,12 @@
 														
 														<p style="text-align: center; margin: 0; color: rgb(112, 130, 118); font-size: 12px; font-weight: 500; text-transform: uppercase; letter-spacing: 1px; padding-bottom: 7px; border-bottom: 1px solid #C9C7C7; margin-bottom: 10px;">DENGAN PERINGKAT:</p>
 														<h1 class="penerimaan"><span id="RANKING"></span> <span style="font-size: 14px; position: relative; top: -6px;">DARI</span> <span id="MAX_RANKING"></span></h1>
-														<p class="text-center noteSementara blink">Perhatian! Hasil Perankingan Sementara!</p>
 													</div>
 												</div>
 			                        		</div>
 			                        	</div>
 		                        	</div>
+		                        	<p class="text-center noteSementara blink" style="margin-top: 5px;">Perhatian! Hasil Perankingan Sementara!</p>
 		                        </div>
 		                    </div>
 		                </div>
