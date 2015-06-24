@@ -12,7 +12,7 @@ class Ranking extends CI_Model {
 		$this->db->select("NO_UJIAN, NAMA, ASAL_SEKOLAH, NILAI_AKHIR, JALUR_DAFTAR");
 		$this->db->from($table);
 		$this->db->where('DITERIMA',$sekolah);
-		$this->db->order_by('NILAI_AKHIR','DESC');
+		$this->db->order_by('NO_URUT','DESC');
 		$result = $this->db->get();
 		if ($result->num_rows() > 0) {
 			return $result->result_array();
