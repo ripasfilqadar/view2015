@@ -63,11 +63,11 @@ $active_group = 'default';
 $query_builder = TRUE;
 
 $db['default'] = array(
-	'dsn'	=> '',
-	'hostname' => '180.250.248.75',
-	'username' => 'viewsda2015',
-	'password' => 'T4k0kn0R1p45',
-	'database' => 'viewsda2015',
+	'dsn'	=> 'viewsda2014',
+	'hostname' => 'localhost',
+	'username' => 'root',
+	'password' => 'root',
+	'database' => 'viewsda2014',
 	'dbdriver' => 'mysqli',
 	'dbprefix' => '',
 	'pconnect' => FALSE,
