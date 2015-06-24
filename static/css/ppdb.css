@@ -219,3 +219,6 @@ table.rankSekolah > tbody > tr > td:first-child, table.rankSekolah > tbody > tr 
 @keyframes blink {
 	67% { opacity: 0 }
 }
+.thinFont {
+	font-weight: 300;
+}

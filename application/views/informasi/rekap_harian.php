@@ -22,23 +22,40 @@
                             <table class="table table-bordered table-hover table-striped" id="jenjangSMP">
                                 <thead style="background-color: #dde4e6; font-weight: 700; text-align: center;">
                                     <tr>
-                                        <td>Lembaga</td>
-                                        <td>NA Tertinggi</td>
-                                        <td>NA Terendah</td>
-                                        <td>Pendaftar</td>
+                                        <td rowspan="2" style="vertical-align: middle">Sekolah</td>
+                                        <td colspan="4">Pagu</td>
+                                        <td colspan="3">Rekapitulasi Pendaftaran</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="thinFont">Pagu Awal</td>
+                                        <td class="thinFont">Tidak Naik</td>
+                                        <td class="thinFont">Prestasi</td>
+                                        <td class="thinFont">Pagu PSB</td>
+                                        <td class="thinFont">NA Tertinggi</td>
+                                        <td class="thinFont">NA Terendah</td>
+                                        <td class="thinFont">Pendaftar</td>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <?php foreach ($smp as $sekolah) { ?>
                                         <tr>
                                             <td><?php echo $sekolah["NAMA_SEKOLAH"]; ?></td>
-                                            <td><?php echo $sekolah["MAX"]; ?></td>
-                                            <td><?php echo $sekolah["MIN"]; ?></td>
-                                            <td><?php echo $sekolah["PENDAFTAR"]; ?></td>
+                                            <td class="text-center"><?php echo $sekolah["PAGUAWAL"]; ?></td>
+                                            <td class="text-center"><?php echo $sekolah["JML_TIDAK_NAIK"]; ?></td>
+                                            <td class="text-center"><?php echo $sekolah["JML_PRESTASI"]; ?></td>
+                                            <td class="text-center"><?php echo $sekolah["PAGUPSB"]; ?></td>
+                                            <td class="text-center"><?php echo $sekolah["MAX"]; ?></td>
+                                            <td class="text-center"><?php echo $sekolah["MIN"]; ?></td>
+                                            <td class="text-center"><?php echo $sekolah["PENDAFTAR"]; ?></td>
                                         </tr>
                                     <?php } ?>
                                 </tbody>
                             </table>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <p class="text-justify" style="font-size: 13px;"><strong style="font-weight: 600;">Keterangan: </strong>&nbsp;PAGU PSB = PAGU AWAL - JUMLAH TIDAK NAIK - JUMLAH JALUR PRESTASI</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -50,24 +67,41 @@
                         <div class="panel-body">
                             <table class="table table-bordered table-hover" id="jenjangSMA">
                                 <thead style="background-color: #dde4e6; font-weight: 700; text-align: center;">
+                                     <tr>
+                                        <td rowspan="2" style="vertical-align: middle">Sekolah</td>
+                                        <td colspan="4">Pagu</td>
+                                        <td colspan="3">Rekapitulasi Pendaftaran</td>
+                                    </tr>
                                     <tr>
-                                        <td>Lembaga</td>
-                                        <td>NA Tertinggi</td>
-                                        <td>NA Terendah</td>
-                                        <td>Pendaftar</td>
+                                        <td class="thinFont">Pagu Awal</td>
+                                        <td class="thinFont">Tidak Naik</td>
+                                        <td class="thinFont">Prestasi</td>
+                                        <td class="thinFont">Pagu PSB</td>
+                                        <td class="thinFont">NA Tertinggi</td>
+                                        <td class="thinFont">NA Terendah</td>
+                                        <td class="thinFont">Pendaftar</td>
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    <?php foreach ($sma as $sekolah) { ?>
+                                    <?php foreach ($smp as $sekolah) { ?>
                                         <tr>
                                             <td><?php echo $sekolah["NAMA_SEKOLAH"]; ?></td>
-                                            <td><?php echo $sekolah["MAX"]; ?></td>
-                                            <td><?php echo $sekolah["MIN"]; ?></td>
-                                            <td><?php echo $sekolah["PENDAFTAR"]; ?></td>
+                                            <td class="text-center"><?php echo $sekolah["PAGUAWAL"]; ?></td>
+                                            <td class="text-center"><?php echo $sekolah["JML_TIDAK_NAIK"]; ?></td>
+                                            <td class="text-center"><?php echo $sekolah["JML_PRESTASI"]; ?></td>
+                                            <td class="text-center"><?php echo $sekolah["PAGUPSB"]; ?></td>
+                                            <td class="text-center"><?php echo $sekolah["MAX"]; ?></td>
+                                            <td class="text-center"><?php echo $sekolah["MIN"]; ?></td>
+                                            <td class="text-center"><?php echo $sekolah["PENDAFTAR"]; ?></td>
                                         </tr>
                                     <?php } ?>
                                 </tbody>
                             </table>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <p class="text-justify" style="font-size: 13px;"><strong style="font-weight: 600;">Keterangan: </strong>&nbsp;PAGU PSB = PAGU AWAL - JUMLAH TIDAK NAIK - JUMLAH JALUR PRESTASI</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -79,12 +113,20 @@
                         <div class="panel-body">
                             <table class="table table-bordered table-hover table-striped" id="jenjangSMK">
                                 <thead style="background-color: #dde4e6; font-weight: 700; text-align: center;">
+                                     <tr>
+                                        <td rowspan="2" style="vertical-align: middle">Sekolah</td>
+                                        <td rowspan="2" style="vertical-align: middle">Jurusan</td>
+                                        <td colspan="4">Pagu</td>
+                                        <td colspan="3">Rekapitulasi Pendaftaran</td>
+                                    </tr>
                                     <tr>
-                                        <td>Lembaga</td>
-                                        <td>Jurusan</td>
-                                        <td>NA Tertinggi</td>
-                                        <td>NA Terendah</td>
-                                        <td>Pendaftar</td>
+                                        <td class="thinFont">Pagu Awal</td>
+                                        <td class="thinFont">Tidak Naik</td>
+                                        <td class="thinFont">Prestasi</td>
+                                        <td class="thinFont">Pagu PSB</td>
+                                        <td class="thinFont">NA Tertinggi</td>
+                                        <td class="thinFont">NA Terendah</td>
+                                        <td class="thinFont">Pendaftar</td>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -92,16 +134,21 @@
                                         <tr>
                                             <td><?php echo $sekolah["NAMA_SEKOLAH"]; ?></td>
                                             <td><?php echo $sekolah["JURUSAN"]; ?></td>
-                                            <td><?php if(empty($sekolah["MAX"])) { echo "-"; } else { echo $sekolah["MAX"]; }?></td>
-                                            <td><?php if(empty($sekolah["MIN"])) { echo "-"; } else { echo $sekolah["MIN"]; }?></td>
-                                            <td><?php echo $sekolah["PENDAFTAR"]; ?></td>
+                                            <td class="text-center"><?php echo $sekolah["PAGUAWAL"]; ?></td>
+                                            <td class="text-center"><?php echo $sekolah["JML_TIDAK_NAIK"]; ?></td>
+                                            <td class="text-center"><?php echo $sekolah["JML_PRESTASI"]; ?></td>
+                                            <td class="text-center"><?php echo $sekolah["PAGUPSB"]; ?></td>
+                                            <td class="text-center"><?php if(empty($sekolah["MAX"])) { echo "-"; } else { echo $sekolah["MAX"]; }?></td>
+                                            <td class="text-center"><?php if(empty($sekolah["MIN"])) { echo "-"; } else { echo $sekolah["MIN"]; }?></td>
+                                            <td class="text-center"><?php echo $sekolah["PENDAFTAR"]; ?></td>
                                         </tr>
                                     <?php } ?>
                                 </tbody>
                             </table>
                             <div class="row">
                                 <div class="col-md-12">
-                                    <p class="text-justify" style="font-size: 13px;"><strong style="font-weight: 600;">Keterangan: </strong>&nbsp;Hasil seleksi untuk jenjang SMK masih menunggu nilai NTMB (Nilai Tes Minat Bakat) dan NTK (Nilai Tes Kompetensi Keahlian)</p>
+                                    <p class="text-justify" style="font-size: 13px; margin-bottom: 3px; margin-top: 5px;"><strong style="font-weight: 600;">Keterangan: </strong>&nbsp;</p>
+                                    <p class="text-justify" style="font-size: 13px;">PAGU PSB = PAGU AWAL - JUMLAH TIDAK NAIK - JUMLAH JALUR PRESTASI<br>Hasil seleksi untuk jenjang SMK masih menunggu nilai NTMB (Nilai Tes Minat Bakat) dan NTK (Nilai Tes Kompetensi Keahlian)</p>
                                 </div>
                             </div>
                         </div>

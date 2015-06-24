@@ -44,6 +44,10 @@ class Sekolah extends CI_Model {
 				t.JURUSAN,
 				l.MIN,
 				l.MAX,
+				t.PAGUPSB, 
+				t.JML_TIDAK_NAIK, 
+				t.JML_PRESTASI, 
+				t.PAGUAWAL, 
 				count(j.NILAI_AKHIR) as PENDAFTAR
 			from pagu_sekolah t
 			left join $tablePendaftar j on j.PILIH1 = t.ID_SEKOLAH or j.PILIH2 = t.ID_SEKOLAH
