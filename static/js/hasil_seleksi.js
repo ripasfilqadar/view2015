@@ -123,6 +123,8 @@ var lalala;
 			$("#result").fadeOut("slow");
 			$("#error").fadeOut("slow");
 			var str = $(this).serialize();
+			$("#warning").fadeOut("slow");
+			$("#diterimaDi").fadeOut("slow");
 			setTimeout(function(){
 				$.ajax({
 					type: "POST",
@@ -136,10 +138,8 @@ var lalala;
 						if (msg != null) {
 							if (msg.NAMA_SEKOLAH == null) {
 								$("#warning").fadeIn("slow");
-								$("#diterimaDi").fadeOut("slow");
 							}
 							else {
-								$("#warning").fadeOut("slow");
 								$("#diterimaDi").fadeIn("slow");
 							}
 							$("#result").fadeIn("slow");
