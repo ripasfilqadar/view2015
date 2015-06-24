@@ -57,6 +57,15 @@
 											</div>
 		                       			</div>
 		                       		</div>
+		                       		<div class="row" id="warning" style="margin-top: 20px; display: none;">
+		                       			<div class="col-md-12">
+		                       				<div class="row-fluid">
+		                       					<div class="col-md-12">
+				                       				<div class="alert alert-warning" role="alert" style="margin-bottom: 0; background-color: #F1C40F; text-align: center; font-size: 13px; letter-spacing: 1px; font-weight: 500;">PESERTA DENGAN NO. UJIAN <span id="NO_UJIAN2" style="font-weight: 700;"></span> BELUM MASUK RANKING PADA SEKOLAH YANG DIPILIH</div>
+												</div>
+											</div>
+		                       			</div>
+		                       		</div>
 		                       		<div class="row" style="color: #888888; font-weight: 200; display: none; margin-top: 20px" id="result">
 			                       		<div class="col-md-12">
 			                        		<div class="col-md-4">
@@ -79,7 +88,7 @@
 						                            <tbody id="detailNilai" style="border-top: none">
 						                            </tbody>
 						                        </table>
-						                        <div class="panel panel-default" style="margin-top: 15px; border-color: rgb(157, 201, 192);">
+						                        <div class="panel panel-default" style="margin-top: 15px; border-color: rgb(157, 201, 192);" id="diterimaDi">
 													<div class="panel-body" style="padding-top: 7px;">
 														<p style="text-align: center; margin: 0; color: rgb(112, 130, 118); font-size: 12px; font-weight: 500; text-transform: uppercase; letter-spacing: 1px; padding-bottom: 7px; border-bottom: 1px solid #C9C7C7; margin-bottom: 10px;">DITERIMA PADA PILIHAN KE-<span id="PILIHAN" style="font-weight: 700; color: rgb(26, 188, 156); font-size: 15px; position: relative; top: 1px;"></span> DI SEKOLAH:</p>
 														<div id="NAMA_SEKOLAH"></div>

@@ -41,7 +41,7 @@ class Cetak extends CI_Controller {
 									<button type="submit" class="btn btn-lg btn-primary btn-block">Masuk</button>
 								</div>
 							</form>';
-		if (date('j') >= 20 && date('n') == 6 && date('Y') == 2015) {
+		if (date('j') >= 24 && date('n') == 6 && date('Y') == 2015) {
 			echo json_encode($loginForm);
 		}
 		else {

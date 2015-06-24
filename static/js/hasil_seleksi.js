@@ -134,8 +134,17 @@ var lalala;
 						$('#detailNilai > tr').remove();
 						var newData = '';
 						if (msg != null) {
+							if (msg.NAMA_SEKOLAH == null) {
+								$("#warning").fadeIn("slow");
+								$("#diterimaDi").fadeOut("slow");
+							}
+							else {
+								$("#warning").fadeOut("slow");
+								$("#diterimaDi").fadeIn("slow");
+							}
 							$("#result").fadeIn("slow");
 							$("#NO_UJIAN").html(msg.NO_UJIAN);
+							$("#NO_UJIAN2").html(msg.NO_UJIAN);
 							$("#NAMA").html(msg.NAMA);
 							$("#WAKTU_DAFTAR").html(msg.WAKTU_DAFTAR);
 							$("#ASAL_SEKOLAH").html(msg.ASAL_SEKOLAH);

@@ -42,22 +42,11 @@ class Ranking extends CI_Model {
 					dt.maximum AS MAX_RANKING,
 					t.JALUR_DAFTAR,
 					IF(skl.JENIS_KEL = 'L','LAKI-LAKI','PEREMPUAN') AS JENIS_KEL
-				from 
-					$table t, 
-					pagu_sekolah p, 
-					(
-						select 
-							diterima, 
-							max(no_urut) as maximum 
-						from $table 
-						group by diterima
-					) dt,
-					$tablePendaftar skl
-				where t.DITERIMA = p.ID_SEKOLAH 
-					and dt.diterima=t.diterima 
-					and t.NO_UJIAN = '$nomor_ujian' 
-					and skl.NO_UJIAN = t.NO_UJIAN
-				order by t.diterima asc, t.NO_URUT";
+				from $table t
+				left join pagu_sekolah p on t.diterima = p.ID_SEKOLAH
+				left join (select diterima, max(no_urut) as maximum from $table group by diterima) dt on dt.diterima=t.diterima
+				left join $tablePendaftar skl on skl.NO_UJIAN = t.NO_UJIAN
+				where t.NO_UJIAN = '$nomor_ujian'";
 		}
 		elseif ($jenjang == "sma") {
 			$query = "
@@ -77,22 +66,11 @@ class Ranking extends CI_Model {
 					dt.maximum AS MAX_RANKING,
 					t.JALUR_DAFTAR,
 					IF(skl.JENIS_KEL = 'L','LAKI-LAKI','PEREMPUAN') AS JENIS_KEL
-				from 
-					$table t, 
-					pagu_sekolah p, 
-					(
-						select 
-							diterima, 
-							max(no_urut) as maximum 
-						from $table 
-						group by diterima
-					) dt,
-					$tablePendaftar skl
-				where t.DITERIMA = p.ID_SEKOLAH 
-					and dt.diterima=t.diterima 
-					and t.NO_UJIAN = '$nomor_ujian' 
-					and skl.NO_UJIAN = t.NO_UJIAN
-				order by t.diterima asc, t.NO_URUT";
+				from $table t
+				left join pagu_sekolah p on t.diterima = p.ID_SEKOLAH
+				left join (select diterima, max(no_urut) as maximum from $table group by diterima) dt on dt.diterima=t.diterima
+				left join $tablePendaftar skl on skl.NO_UJIAN = t.NO_UJIAN
+				where t.NO_UJIAN = '$nomor_ujian'";
 		}
 		elseif ($jenjang == "smk") {
 			$query = "
@@ -117,22 +95,11 @@ class Ranking extends CI_Model {
 					dt.maximum AS MAX_RANKING,
 					t.JALUR_DAFTAR,
 					IF(skl.JENIS_KEL = 'L','LAKI-LAKI','PEREMPUAN') AS JENIS_KEL
-				from 
-					$table t, 
-					pagu_sekolah p, 
-					(
-						select 
-							diterima, 
-							max(no_urut) as maximum 
-						from $table 
-						group by diterima
-					) dt,
-					$tablePendaftar skl
-				where t.DITERIMA = p.ID_SEKOLAH 
-					and dt.diterima=t.diterima 
-					and t.NO_UJIAN = '$nomor_ujian' 
-					and skl.NO_UJIAN = t.NO_UJIAN
-				order by t.diterima asc, t.NO_URUT";
+				from $table t
+				left join pagu_sekolah p on t.diterima = p.ID_SEKOLAH
+				left join (select diterima, max(no_urut) as maximum from $table group by diterima) dt on dt.diterima=t.diterima
+				left join $tablePendaftar skl on skl.NO_UJIAN = t.NO_UJIAN
+				where t.NO_UJIAN = '$nomor_ujian'";
 		}
 		$result = $this->db->query($query);
 		if ($result->num_rows() > 0) {
