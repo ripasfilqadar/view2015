@@ -120,6 +120,7 @@
 										                    <option value="sd">SD</option>
 										                    <option value="smp">SMP</option>
 										                    <option value="sma">SMA</option>
+										                    <option value="smk">SMK</option>
 										                </select>
 										            </div>
 				                       			</div>
