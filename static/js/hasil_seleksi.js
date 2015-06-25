@@ -92,19 +92,22 @@ var lalala;
 				var newData = '';
 				tempSekolah.pop();
 				temp2x = [];
+				console.log(msg);
 				$.each(msg,function(i,o){
 					if (jenjang != 'smk') {
 						newData += '<option value="'+o.ID_SEKOLAH+'">'+o.NAMA_SEKOLAH+'</option>';
 					}
 					else {
-						if (i+1 != msg.length) {
+						if (i != msg.length-1) {
 							if (i == 0) {
 								newData += '<optgroup label="'+o.NAMA_SEKOLAH+'">';
+								newData += '<option value="'+o.ID_SEKOLAH+'">'+o.JURUSAN+'</option>';
 							}
-							if (msg[i].NAMA_SEKOLAH == msg[i+1].NAMA_SEKOLAH) {
+							else if (msg[i].NAMA_SEKOLAH == msg[i+1].NAMA_SEKOLAH) {
 								newData += '<option value="'+o.ID_SEKOLAH+'">'+o.JURUSAN+'</option>';
 							}
 							else {
+								newData += '<option value="'+o.ID_SEKOLAH+'">'+o.JURUSAN+'</option>';
 								newData += '<optgroup label="'+msg[i+1].NAMA_SEKOLAH+'">';
 							}
 						}
