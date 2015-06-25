@@ -205,6 +205,15 @@ var lalala;
 		if (typeof jenjang !== 'undefined' && jenjang !== null && jenjang != 0) {
 			$("#resultSekolah").fadeOut("slow");
 			$("#resultSekolahSD").fadeOut("slow");
+			if (jenjang == 'smp') {
+				$('#textNilai').html('NA/NS');
+			}
+			else if (jenjang == 'sma') {
+				$('#textNilai').html('N. UN');
+			}
+			else if (jenjang == 'smk') {
+				$('#textNilai').html('NA');
+			}
 			var str = $(this).serialize();
 			dataRankingSekolah = [[]];
 			setTimeout(function(){

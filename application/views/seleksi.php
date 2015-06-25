@@ -148,7 +148,7 @@
 							                            		<td class="col-md-2">No. UJIAN</td>
 							                            		<td class="col-md-4">NAMA LENGKAP</td>
 							                            		<td class="col-md-4">ASAL SEKOLAH</td>
-							                            		<td class="col-md-1">NA</td>
+							                            		<td class="col-md-1"><span id="textNilai">NA</span></td>
 							                            	</tr>
 							                            </thead>
 							                        </table>
