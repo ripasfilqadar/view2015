@@ -2,7 +2,7 @@
 		</div>
 		<footer>
 			<div class="container" style="padding-top: 13px;">
-				<p style="margin: 0">&copy; 2015 <a href="<?php echo base_url(); ?>">PPDB SIDOARJO 2015</a> | <a href="http://www.dispendiksidoarjo.net/" target="_blank">DINAS KABUPATEN SIDOARJO</a></p>
+				<p style="margin: 0">&copy; 2015 <a href="<?php echo base_url(); ?>">PPDB SIDOARJO 2015</a> | <a href="http://www.dispendiksidoarjo.net/" target="_blank">DINAS PENDIDIKAN KABUPATEN SIDOARJO</a></p>
 			</div>
 		</footer>
 		<script src="<?php echo base_url(); ?>static/js/jquery.min.js"></script>
