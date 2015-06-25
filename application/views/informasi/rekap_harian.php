@@ -83,7 +83,7 @@
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    <?php foreach ($smp as $sekolah) { ?>
+                                    <?php foreach ($sma as $sekolah) { ?>
                                         <tr>
                                             <td><?php echo $sekolah["NAMA_SEKOLAH"]; ?></td>
                                             <td class="text-center"><?php echo $sekolah["PAGUAWAL"]; ?></td>
