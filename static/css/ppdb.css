@@ -222,3 +222,26 @@ table.rankSekolah > tbody > tr > td:first-child, table.rankSekolah > tbody > tr 
 .thinFont {
 	font-weight: 300;
 }
+.pengumuman {
+	border: 2px dashed #1FBBA6;
+	padding-bottom: 20px;
+	padding-top: 20px;
+	border-radius: 4px;
+}
+.pengumuman div h1 {
+	font-size: 24px;
+	font-weight: 700;
+	letter-spacing: 4px;
+	text-align: center;
+	margin-top: 0px;
+	margin-bottom: 10px;
+	color: rgb(125, 138, 134);
+	border-bottom: 1px solid #C0BCBC;
+	padding-bottom: 5px;
+}
+.pengumuman div ol li {
+	text-align: justify;
+	font-weight: 400;
+	letter-spacing: 1px;
+	font-size: 16px;
+}

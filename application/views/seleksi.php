@@ -12,6 +12,17 @@
 		</div>
 		<div class="container">
 			<div class="row" style="margin: 30px 0px 90px;">
+				<div class="col-md-10 col-md-offset-1" style="margin-bottom: 20px;">
+					<div class="row-fluid pengumuman" style="padding: 0;">
+						<div style="padding: 20px;">
+							<h1>PENGUMUMAN</h1>
+							<ol>
+								<li>PENGUMUMAN PENERIMAAN PPDB SIDOARJO DIMAJUKAN SABTU 27 JUNI 2015 DI SEKOLAH MASING MASING PUKUL 10.00</li>
+								<li>DAFTAR ULANG BISA DILAKUKAN DI SEKOLAH MULAI SENIN 29 JUNI 2015 S.D. RABU. 1 JULI 2015</li>
+							</ol>
+						</div>
+					</div>
+				</div>
 				<div class="col-md-10 col-md-offset-1">
 					<p class="text-center">Ranking terakhir diupdate pada: &nbsp;<span id="lastUpdated" style="color: #1ABC9C; font-weight: 500;"></span></p>
 				</div>
@@ -19,7 +30,7 @@
 		            <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
 		                <div class="panel panel-ppdb">
 		                    <div class="panel-heading" role="tab" id="headingOne">
-		                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne"><h4 class="page_subtitle">HASIL SELEKSI PER SISWA (SEMENTARA)</h4></a>
+		                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne"><h4 class="page_subtitle">HASIL SELEKSI PER SISWA (FINAL TAHAP I)</h4></a>
 		                    </div>
 		                    <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
 		                       	<div class="panel-body">
@@ -100,13 +111,13 @@
 			                        		</div>
 			                        	</div>
 		                        	</div>
-		                        	<p class="text-center noteSementara blink" style="margin-top: 5px;">Perhatian! Hasil Perankingan Sementara!</p>
+		                        	<p class="text-center noteSementara blink" style="margin-top: 5px;">Perhatian! Hasil Perankingan Final Tahap 1</p>
 		                        </div>
 		                    </div>
 		                </div>
 		                <div class="panel panel-ppdb">
 		                    <div class="panel-heading" role="tab" id="headingTwo">
-		                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="true" aria-controls="collapseOne"><h4 class="page_subtitle">HASIL SELEKSI PER SEKOLAH (SEMENTARA)</h4></a>
+		                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="true" aria-controls="collapseOne"><h4 class="page_subtitle">HASIL SELEKSI PER SEKOLAH (FINAL TAHAP I)</h4></a>
 		                    </div>
 		                    <div id="collapseTwo" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingTwo">
 		                       	<div class="panel-body">
@@ -162,7 +173,7 @@
 			                        	<div class="row-fluid">
 			                       			<div class="col-md-12">
 					                       		<div class="col-md-12">
-				                        			<p class="text-center noteSementara blink">Perhatian! Hasil Perankingan Sementara!</p>
+				                        			<p class="text-center noteSementara blink">Perhatian! Hasil Perankingan Final Tahap 1</p>
 				                        		</div>
 				                        	</div>
 				                        </div>
@@ -191,7 +202,7 @@
 			                        	<div class="row-fluid">
 			                       			<div class="col-md-12">
 					                       		<div class="col-md-12">
-				                        			<p class="text-center noteSementara blink">Perhatian! Hasil Perankingan Sementara!</p>
+				                        			<p class="text-center noteSementara blink">Perhatian! Hasil Perankingan Final Tahap 1</p>
 				                        		</div>
 				                        	</div>
 				                        </div>

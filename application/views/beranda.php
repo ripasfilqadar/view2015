@@ -5,7 +5,16 @@
 					</div>
 					<div class="col-md-9">
 						<h1>PPDB SIDOARJO 2015</h1>
-						<p>Selamat datang di situs Penerimaan Peserta Didik Baru (PPDB) Kota Sidoarjo periode 2015. Situs ini dipersiapkan sebagai pusat informasi, pendaftaran dan pengolahan seleksi data peserta didik baru periode 2015 yang dilakukan secara online. Informasi lengkap seputar pelaksanaan PPDB akan selalu diperbaharui pada situs ini.</p>
+						<p>Selamat datang di situs Penerimaan Peserta Didik Baru (PPDB) Kabupaten Sidoarjo periode 2015. Situs ini dipersiapkan sebagai pusat informasi, pendaftaran dan pengolahan seleksi data peserta didik baru periode 2015 yang dilakukan secara online. Informasi lengkap seputar pelaksanaan PPDB akan selalu diperbaharui pada situs ini.</p>
+					</div>
+				</div>
+				<div class="row pengumuman" style="margin-top: 50px;">
+					<div class="col-md-12">
+						<h1>PENGUMUMAN</h1>
+						<ol>
+							<li>PENGUMUMAN PENERIMAAN PPDB SIDOARJO DIMAJUKAN SABTU 27 JUNI 2015 DI SEKOLAH MASING MASING PUKUL 10.00</li>
+							<li>DAFTAR ULANG BISA DILAKUKAN DI SEKOLAH MULAI SENIN 29 JUNI 2015 S.D. RABU. 1 JULI 2015</li>
+						</ol>
 					</div>
 				</div>
 			</div>

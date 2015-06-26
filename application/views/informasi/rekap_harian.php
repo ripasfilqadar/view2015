@@ -148,7 +148,7 @@
                             <div class="row">
                                 <div class="col-md-12">
                                     <p class="text-justify" style="font-size: 13px; margin-bottom: 3px; margin-top: 5px;"><strong style="font-weight: 600;">Keterangan: </strong>&nbsp;</p>
-                                    <p class="text-justify" style="font-size: 13px;">PAGU PSB = PAGU AWAL - JUMLAH TIDAK NAIK - JUMLAH JALUR PRESTASI<br>Hasil seleksi untuk jenjang SMK masih menunggu nilai NTMB (Nilai Tes Minat Bakat) dan NTK (Nilai Tes Kompetensi Keahlian)</p>
+                                    <p class="text-justify" style="font-size: 13px;">PAGU PSB = PAGU AWAL - JUMLAH TIDAK NAIK - JUMLAH JALUR PRESTASI</p>
                                 </div>
                             </div>
                         </div>

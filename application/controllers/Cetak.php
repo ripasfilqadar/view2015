@@ -83,7 +83,7 @@ class Cetak extends CI_Controller {
 				$dpdf->ezText($text,15,array('justification'=>'center'));
 				$dpdf->ezText($school,15,array('justification'=>'center'));
 				if(!empty($jurusan)) {
-					$dpdf->ezText($jurus,14,array('justification'=>'center'));
+					$dpdf->ezText($jurus,13,array('justification'=>'center'));
 					$dpdf->ezText($tahun,15,array('justification'=>'center'));
 					$dpdf->ezSetY(800);
 				}
