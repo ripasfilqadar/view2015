@@ -8,8 +8,12 @@ class Penerimaan extends CI_Controller {
 	}
 
 	public function index() {
+		$this->tahap(2);
+	}
+
+	public function tahap($tahap=2) {
 		$this->load->library('session');
-		$data['title'] = "Hasil Seleksi";
+		$data['title'] = "Hasil Seleksi Tahap ".$tahap;
 		$style1 = base_url()."static/css/breadcrumb.css";
 		$style2 = base_url()."static/css/datatable.css";
 		$style3 = base_url()."static/css/custom_select.css";
@@ -58,6 +62,7 @@ class Penerimaan extends CI_Controller {
 		}
 		$data['rankSekolahButton'] = $rankSekolahButton;
 		$data['logoutModal'] = $logoutModal;
+		$data['tahap'] = $tahap;
 		$this->layout->render('seleksi', $data);
 	}
 
@@ -73,7 +78,7 @@ class Penerimaan extends CI_Controller {
 		echo json_encode($result);
 	}
 
-	function getRankSekolah() {
+	function getRankSekolah($tahap=2) {
 		$this->load->model('ranking');
 		$jenjang = strtolower($this->input->post('jenjang'));
 		$sekolah = $this->input->post('sekolah');
@@ -85,12 +90,12 @@ class Penerimaan extends CI_Controller {
 			$result = substr(strstr($string, '<tr class="odd">'), 0, strpos(strstr($string, '<tr class="odd">'), "</tbody>"));
 		}
 		else {
-			$result = $this->ranking->getRankSekolah($jenjang,$sekolah);
+			$result = $this->ranking->getRankSekolah($jenjang,$sekolah,$tahap);
 		};
 		echo json_encode($result);
 	}
 
-	function getRankSiswa() {
+	function getRankSiswa($tahap=2) {
 		$this->load->model('ranking');
 		$nomor_ujian = $this->input->post('nomor_ujian');
 		$jenjang = strtolower($this->input->post('jenjang'));
@@ -98,7 +103,7 @@ class Penerimaan extends CI_Controller {
 			$result = NULL;
 		}
 		else {
-			$result = $this->ranking->getRankSiswa($nomor_ujian,$jenjang);
+			$result = $this->ranking->getRankSiswa($nomor_ujian,$jenjang,$tahap);
 		};
 		if ($result != NULL) {
 			$result['IMAGE'] = base_url()."static/images/".strtoupper($jenjang)."_".strtoupper(substr($result['JENIS_KEL'],0,1)).".png";

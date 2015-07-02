@@ -56,7 +56,13 @@
 								<li><a href="<?php echo base_url(); ?>informasi/rekap_harian">STATISTIK HARIAN</a></li>
 							</ul>
 						</li>
-						<li <?php if ($this->uri->segment(1) == "penerimaan") { ?>class="active"<?php } ?>><a href="<?php echo base_url(); ?>penerimaan">HASIL SELEKSI</a></li>
+						<li class="dropdown <?php if ($this->uri->segment(1) == "penerimaan") { ?>active<?php } ?>">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">HASIL SELEKSI <span class="caret"></span></a>
+							<ul class="dropdown-menu" role="menu">
+								<li><a href="<?php echo base_url(); ?>penerimaan/tahap/1">TAHAP 1</a></li>
+								<li><a href="<?php echo base_url(); ?>penerimaan/tahap/2">TAHAP 2</a></li>
+							</ul>
+						</li>
 						 <li class="dropdown <?php if ($this->uri->segment(1) == "sekolah") { ?>active<?php } ?>">
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">SEKOLAH <span class="caret"></span></a>
 							<ul class="dropdown-menu" role="menu">

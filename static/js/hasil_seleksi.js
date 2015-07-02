@@ -1,6 +1,6 @@
 var lalala;
 (function ($) {
-	$.getJSON( "lastUpdateRank.php", function( data ) {
+	$.getJSON( "../../lastUpdateRank.php", function( data ) {
 		$('#lastUpdated').html(data);
 	});
 	Mousetrap.bind(['ctrl+shift+z', 'meta+shift+z'], function(e) {
@@ -34,6 +34,7 @@ var lalala;
 	var dataRankingSekolah = new Array([]);
 	var tempSekolah = [[]];
 	var temp2x = [];
+	var tahap = $('#tahap').val();
 	$('#btnSiswa').on('click', function () {
 		if (typeof jenjang !== 'undefined' && jenjang !== null && jenjang != 0) {
 			btnSiswa = $(this).button('loading');
@@ -83,10 +84,11 @@ var lalala;
 		$('#sekolahSelect > option:first-child').text('MEMUAT...');
 		$.ajax({
 			type: "POST",
-			url: "penerimaan/getSekolah",
+			url: "../../penerimaan/getSekolah",
 			dataType: 'json',
 			data: str,
 			success: function(msg) {
+				console.log(msg);
 				$('#sekolahSelect > option:first-child').text('PILIH SEKOLAH');
 				lalala = msg;
 				var newData = '';
@@ -131,10 +133,11 @@ var lalala;
 			setTimeout(function(){
 				$.ajax({
 					type: "POST",
-					url: "penerimaan/getRankSiswa",
+					url: "../../penerimaan/getRankSiswa",
 					dataType: 'json',
 					data: str,
 					success: function(msg) {
+						console.log(msg);
 						btnSiswa.button('reset');
 						$('#detailNilai > tr').remove();
 						var newData = '';
@@ -216,6 +219,7 @@ var lalala;
 			}
 			var str = $(this).serialize();
 			dataRankingSekolah = [[]];
+			var url = '../../penerimaan/getRankSekolah/'+tahap;
 			setTimeout(function(){
 				if (jenjang != 'sd') {
 					$('#ranking_sekolah').dataTable().fnDestroy();
@@ -227,7 +231,7 @@ var lalala;
 				}
 				$.ajax({
 					type: "POST",
-					url: "penerimaan/getRankSekolah",
+					url: url,
 					dataType: 'json',
 					data: str,
 					success: function(msg) {

@@ -18,7 +18,7 @@
 							<h1>PENGUMUMAN</h1>
 							<ol>
 								<li>PENGUMUMAN PENERIMAAN PPDB SIDOARJO DIMAJUKAN SABTU 27 JUNI 2015 DI SEKOLAH MASING MASING PUKUL 10.00</li>
-								<li>DAFTAR ULANG BISA DILAKUKAN DI SEKOLAH MULAI SENIN 29 JUNI 2015 S.D. RABU. 1 JULI 2015</li>
+								<li>DAFTAR ULANG TAHAP 2 BISA DILAKUKAN DI SEKOLAH PADA 3-4 JULI 2015</li>
 							</ol>
 						</div>
 					</div>
@@ -30,8 +30,9 @@
 		            <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
 		                <div class="panel panel-ppdb">
 		                    <div class="panel-heading" role="tab" id="headingOne">
-		                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne"><h4 class="page_subtitle">HASIL SELEKSI PER SISWA (FINAL TAHAP I)</h4></a>
+		                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne"><h4 class="page_subtitle">HASIL SELEKSI PER SISWA (FINAL TAHAP <?php echo $tahap; ?>)</h4></a>
 		                    </div>
+				    <input type="hidden" id="tahap" value="<?php echo $tahap; ?>">
 		                    <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
 		                       	<div class="panel-body">
 		                       		<div class="row" style="margin-top: 10px;">
@@ -62,7 +63,7 @@
 		                       					<div class="col-md-12">
 				                       				<div class="alert alert-danger fade in" role="alert" style="font-weight: 100; font-size: 15px;">
 														<button type="button" class="close" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-														<strong>Error!</strong> Data yang anda cari tidak dapat ditemukan.
+														Data yang anda cari tidak dapat ditemukan pada hasil seleksi tahap <?php echo $tahap; ?>.
 													</div>
 												</div>
 											</div>
@@ -111,13 +112,13 @@
 			                        		</div>
 			                        	</div>
 		                        	</div>
-		                        	<p class="text-center noteSementara blink" style="margin-top: 5px;">Perhatian! Hasil Perankingan Final Tahap 1</p>
+		                        	<p class="text-center noteSementara blink" style="margin-top: 5px;">Perhatian! Hasil Perankingan Final Tahap <?php echo $tahap; ?></p>
 		                        </div>
 		                    </div>
 		                </div>
 		                <div class="panel panel-ppdb">
 		                    <div class="panel-heading" role="tab" id="headingTwo">
-		                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="true" aria-controls="collapseOne"><h4 class="page_subtitle">HASIL SELEKSI PER SEKOLAH (FINAL TAHAP I)</h4></a>
+		                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="true" aria-controls="collapseOne"><h4 class="page_subtitle">HASIL SELEKSI PER SEKOLAH (FINAL TAHAP <?php echo $tahap; ?>)</h4></a>
 		                    </div>
 		                    <div id="collapseTwo" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingTwo">
 		                       	<div class="panel-body">
@@ -173,7 +174,7 @@
 			                        	<div class="row-fluid">
 			                       			<div class="col-md-12">
 					                       		<div class="col-md-12">
-				                        			<p class="text-center noteSementara blink">Perhatian! Hasil Perankingan Final Tahap 1</p>
+				                        			<p class="text-center noteSementara blink">Perhatian! Hasil Perankingan Final Tahap <?php echo $tahap; ?></p>
 				                        		</div>
 				                        	</div>
 				                        </div>
@@ -202,7 +203,7 @@
 			                        	<div class="row-fluid">
 			                       			<div class="col-md-12">
 					                       		<div class="col-md-12">
-				                        			<p class="text-center noteSementara blink">Perhatian! Hasil Perankingan Final Tahap 1</p>
+				                        			<p class="text-center noteSementara blink">Perhatian! Hasil Perankingan Final Tahap <?php echo $tahap; ?></p>
 				                        		</div>
 				                        	</div>
 				                        </div>

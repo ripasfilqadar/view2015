@@ -12,8 +12,9 @@
 					<div class="col-md-12">
 						<h1>PENGUMUMAN</h1>
 						<ol>
+							<li>HASIL SELEKSI TAHAP 2 BISA DILIHAT PADA HALAMAN <a href="<?php echo base_url(); ?>penerimaan/tahap/2" style="color: rgb(31, 187, 166); font-weight: 500;">HASIL SELEKSI TAHAP 2</a></li>
 							<li>PENGUMUMAN PENERIMAAN PPDB SIDOARJO DIMAJUKAN SABTU 27 JUNI 2015 DI SEKOLAH MASING MASING PUKUL 10.00</li>
-							<li>DAFTAR ULANG BISA DILAKUKAN DI SEKOLAH MULAI SENIN 29 JUNI 2015 S.D. RABU. 1 JULI 2015</li>
+							<li>DAFTAR ULANG TAHAP 2 BISA DILAKUKAN DI SEKOLAH PADA 3-4 JULI 2015</li>
 						</ol>
 					</div>
 				</div>

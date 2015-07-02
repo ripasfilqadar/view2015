@@ -7,8 +7,11 @@ class Ranking extends CI_Model {
 		$this->load->database('default');
 	}
 
-	function getRankSekolah($jenjang,$sekolah) {
+	function getRankSekolah($jenjang,$sekolah,$tahap=2) {
 		$table = "terima_".$jenjang."_2";
+		if($tahap == 1) {
+			$table = "terima_".$jenjang."_tahap_1";
+		}
 		$this->db->select("NO_UJIAN, NAMA, ASAL_SEKOLAH, NILAI_AKHIR, JALUR_DAFTAR");
 		$this->db->from($table);
 		$this->db->where('DITERIMA',$sekolah);
@@ -22,8 +25,11 @@ class Ranking extends CI_Model {
 		}
 	}
 
-	function getRankSiswa($nomor_ujian,$jenjang) {
+	function getRankSiswa($nomor_ujian,$jenjang,$tahap=2) {
 		$table = "terima_".$jenjang."_2";
+		if($tahap == 1) {
+                        $table = "terima_".$jenjang."_tahap_1";
+                }
 		$tablePendaftar = "pendaftar_".$jenjang;
 		if ($jenjang == "smp") {
 			$query = "
